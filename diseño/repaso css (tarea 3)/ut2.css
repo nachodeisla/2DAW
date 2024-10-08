@@ -1,0 +1,116 @@
+/*1*/
+#colores-fondos h2 {
+    color: blueviolet;
+    background-color: black;
+}
+
+#colores-fondos p {
+    color: blue;
+    background-color: grey;
+}
+
+/*2*/
+#tipografia h2 {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 220%
+}
+
+#tipografia h3 {
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+    font-size: 120%
+}
+
+#tipografia p {
+    font-weight: lighter;
+    line-height: 22%;
+}
+
+/*3*/
+#espaciado h2 {
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+#espaciado div {
+    text-align: center;
+    padding-left: 20px;
+    padding-top: 20px;
+}
+
+/*4*/
+#bordes-sombras h2 {
+    border: solid;
+    border-radius: 20px;
+    box-shadow: inset 10px 10px greenyellow;
+}
+
+#bordes-sombras div {
+    border: solid;
+}
+
+/*5*/
+#posicionamiento h2 {
+    position: relative;
+}
+
+#posicionamiento div {
+    position: absolute;
+}
+
+/*6*/
+#productos li {
+    list-style-type: none;
+    list-style-image: url(https://img.icons8.com/?size=50&id=TzgQt5eCZecl&format=png);
+    list-style-position: inside;
+    
+}
+
+/*7*/
+#botones button {
+    color: aqua;
+    border: 4px;
+    border-radius: 25%;
+    background-color: blue;
+}
+
+/*8*/
+
+#tablas table {
+    border: solid;
+    border-color: brown;
+    text-align: center;
+}
+
+/*9*/
+#contenedor li {
+    margin-top: 12px;
+    margin-left: 12px;
+}
+
+/*10*/
+#imagenes img {
+    border-radius: 15%;
+    border-color: aqua;
+
+}
+/*11*/
+#formularios form {
+    border-radius: 4px;
+    font-size: medium;
+}
+/*13*/
+#enlaces a{
+    text-decoration: aquamarine;
+    
+}
+/*14*/
+#enlaces a{
+    letter-spacing : 50px;
+     text-shadow: 16px;
+    
+}
+/*15*/
+#elementos-linea div{
+   display: inline;
+    
+}
