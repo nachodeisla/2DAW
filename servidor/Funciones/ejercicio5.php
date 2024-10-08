@@ -17,7 +17,7 @@
     <?php
     print "<form action= \"ejercicio5-2.php\" method=post>
     <p>Filas <input type=\"number\" name=\"caja1\"></p>
-     <p>Columnas <input type=\"number\" name=\"caja2\"></p>
+    <p>Columnas <input type=\"number\" name=\"caja2\"></p>
     <button type=\"submit\">Enviar</button>
     <button type=\"reset\">Reset</button>
     </form>"
