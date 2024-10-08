@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        function ejemplo() {
+            var variable1 = 1
+            let variable2 = 1
+            const variable3 = 1
+            variable4 = 1
+        }
+        //ejemplo1();
+        if (isNaN("hola")) {
+            "era no numerico"
+        } else {
+            "era numerico"
+        }
+
+        var fecha1 = "12-12-2022";
+        var fecha2 = "14-01-2023";
+        var fecha3 = "29-02-2025";
+
+        var fecha4 = new Date("12-12-2022");
+        var fecha5 = new Date(2022, 11, 12);
+        var fecha6 = new Date();
+        console.log(fecha4);
+        console.log(fecha5);
+        console.log(fecha6);
+        var fecha7 = new Date(2025, 1, 29);
+        console.log(fecha7);
+
+        console.log(fecha4.getDay());
+        console.log(fecha4.getDate());
+        console.log(fecha4.getMonth());
+        console.log(fecha4.getFullYear());
+
+
+        anno = fecha5.getFullYear();
+        mes = fecha5.getMonth();
+        dia = fecha5.getDay();
+
+
+        function esFechaValida(anno, mes, dia) {
+            let annoActual = new Date().getFullYear();
+            let mesActual = 1 + (new Date().getMonth());
+            let diaActual = new Date().getDate();
+
+            if () {
+
+            }
+
+
+        }
+
+
+        function esUnaSemanaMas(anno1, mes1, dia1, anno2, mes2, dia2) {
+            let fecha1 = new Date(anno1, mes1 - 1, dia1);
+            let fecha2 = new Date(anno2, mes2 - 1, dia2);
+            fecha1.setDate(dia1 + 7);
+            
+
+            if (fecha1 < fecha2) {
+                return true
+            } else { return false } 
+
+
+    }
+
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

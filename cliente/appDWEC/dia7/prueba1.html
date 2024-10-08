@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+
+        var listaDeLibros = [["it", "stephen king", 1978],
+                             ["1984", "George Orwell", 1949],
+                             ["revolucion en la granja ", "George Orwell", 1953]];
+
+        var listaDeLibros2 = [];
+            listaDeLibros2[0] = ["it", "Stephen King", 1978],
+            listaDeLibros2[1] = ["1984", "George Orwell", 1949],
+            listaDeLibros2[2] = ["Revolucion en la granja ", "George Orwell", 1953]
+
+        var listaDeLibros3 = new Array();
+            listaDeLibros3.push = ["it", "stephen king", 1978],
+            listaDeLibros3.push = ["1984", "George Orwell", 1949],
+            listaDeLibros3.push = ["revolucion en la granja ", "George Orwell", 1953]
+
+        window.onload = () => {
+            mostrarLibros();
+
+        }
+
+        function mostrarLibros() {
+            if (document.getElementById("tablaLibros")) {
+                document.getElementById("tablaLibros").remove();
+            }
+            var tabla = '<table id="tablaLibros" border=1><tbody><tr><td><a href="javascript:ordenarPorTitulo()">NOMBRE</a></td><td>AUTOR</td><td>AÑO</td></tr>';
+            listaDeLibros.forEach((libro, indice, array) => tabla += (`<tr><td> ${libro[0]}</td><td> ${libro[1]}</td><td>${libro[2]}</td></tr>`));
+            tabla += '</tbody></table>';
+            document.body.insertAdjacentHTML = ("beforeend",tabla);
+
+        }
+        function ordenarPorTitulo() {
+
+            listaDeLibros.sort((a, b) => {
+                if (a[0] > b[0]) {
+                    return 1
+                } else {
+                    return -1
+                }
+            });
+            mostrarLibros();
+        }
+        function filtrarPorTitulo() {
+            let tituloABuscar = document.getElementById("titulo").value;
+            var listaLibrosFiltrada = listaDeLibros.filter((libro) => libro[0].toLocaleLowerCase().include(tituloABuscar.toLocaleLowerCase()));
+            mostrarLibros(listaLibrosFiltrada);
+
+        }
+        /*
+        function mostrarLibros2() {
+
+            var tabla = '<center><table border=1><tbody><tr><td>NOMBRE</td><td>AUTOR</td><td>AÑO</td></tr>';
+            listaDeLibros.forEach((libro, indice, array) => tabla +=`<tr>`
+                libro.forEach(campo, indice2, array2) => tabla += `<td>${campo}</td>`
+                tabla+= `</tr>`);
+            tabla += '</tbody></table></center>';
+            document.body.innerHTML = tabla;
+
+        }
+        */
+    </script>
+</head>
+<body>
+    <p>
+        Filtrar:<input type="text" id="titulo" onkeyup="filtrarPorTitulo()">
+        <button type="button" onclick="filtrarPorTitulo()">Buscar</button>
+    </p>
+</body>
+
+</html>

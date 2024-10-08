@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var imagen = prompt("dime la ruta de una imagen");
+        var numero = prompt("dime un numero entre el 1 y el 999");
+        var texto = "";
+        if (numero > 0 && numero <= 999) {
+            for (posicion = 1; posicion <= numero; posicion++) {
+
+                texto += "<img src='" + imagen + "'/>" + "<br/>"
+
+            }
+        }
+        else {
+            document.body.innerHTML("el numero introducido no es valido");
+
+        }
+        document.body.innerHTML = texto;
+    </script>
+
+
+
+</body>
+
+</html>

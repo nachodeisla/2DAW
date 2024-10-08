@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="shortcut icon" href="">
+
+    <script>
+        function operacionSumar() {
+            let numero1 = document.getElementById("operador1").value;
+            let numero2 = document.getElementById("operador2").value;
+            let resultado = 0;
+            if (isNaN(numero1) || isNaN(numero2)) {
+                alert("todos los campos deber ser numericos")
+
+            } else {
+                resultado = parseInt(numero1) + parseInt(numero2);
+                document.getElementById("resultado").value = resultado;
+
+            }
+
+        }
+
+        function operacionRestar() {
+            let numero1 = document.getElementById("operador1").value;
+            let numero2 = document.getElementById("operador2").value;
+            let resultado = 0;
+            if (isNaN(numero1) || isNaN(numero2)) {
+                alert("todos los campos deber ser numericos")
+
+            } else {
+                resultado = parseInt(numero1) - parseInt(numero2);
+                document.getElementById("resultado").value = resultado;
+
+            }
+
+        }
+
+        function operacionMultiplicar() {
+            let numero1 = document.getElementById("operador1").value;
+            let numero2 = document.getElementById("operador2").value;
+            let resultado = 0;
+            if (isNaN(numero1) || isNaN(numero2)) {
+                alert("todos los campos deber ser numericos")
+
+            } else {
+                resultado = parseInt(numero1) * parseInt(numero2);
+                document.getElementById("resultado").value = resultado;
+
+            }
+
+        }
+
+        function operacionDividir() {
+            let numero1 = document.getElementById("operador1").value;
+            let numero2 = document.getElementById("operador2").value;
+            let resultado = 0;
+            if (isNaN(numero1) || isNaN(numero2)) {
+                alert("todos los campos deber ser numericos")
+
+            } else {
+                resultado = parseInt(numero1) / parseInt(numero2);
+                document.getElementById("resultado").value = resultado;
+
+            }
+
+        }
+
+        function operacionOrdenar() {
+            var numeros = document.getElementById("listaNumeros").value;
+            var listaNumeros = numeros.split(',');
+            listaNumeros.forEach(numero => {
+
+            });
+            listaNumeros.sort((a, b) => {
+                if (aq[0] > b[0]) {
+                    return 1
+                } else {
+                    return -1
+                }
+
+            })
+            document.getElementById("listaNumeros").value = listaNumeros[0];
+
+
+        }
+
+    </script>
+
+</head>
+
+<body>
+    <H1> USO DE STRINGS</H1>
+    <span>OPERADOR 1: </span><input type="Text" id="operador1"><br />
+    <span>OPERADOR 2: </span><textarea id="operador2"></textarea><br />
+    <span>RESULTADO: </span><input type="Text" id="resultado"><br />
+    <input type="button" value="SUMAR" onclick="operacionSumar()">
+    <input type="button" value="RESTAR" onclick="operacionRestar()">
+    <input type="button" value="MULTIPLICAR" onclick="operacionMultiplicar()">
+    <input type="button" value="DIVIDIR" onclick="operacionDividir()"><br />
+    <span>Lista de numeros a ordenar: </span><input type="Text" id="listaNumeros"><br />
+    <input type="button" value="ORDENAR" onclick="operacionOrdenar()">
+</body>
+
+</html>

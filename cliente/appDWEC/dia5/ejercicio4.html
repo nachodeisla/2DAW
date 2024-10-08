@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="shortcut icon" href="">
+
+    <script>
+        function comprobar() {
+            var cont = 0;
+            var frase111 = "ado"
+            var frase11 = document.getElementById("frase1").value.IndexOf("ado");
+            if (frase11 != -1) {
+                cont++;
+                while (frase11 != -1 && frase111 != -1) {
+                    frase111 = document.getElementById("frase1").value.IndexOf("ado",frase11);
+                    frase11 = frase111;
+                    cont++;
+                }
+
+            }
+            else {
+
+            }
+            alert(`el valor "ado" sale un total de ${cont} veces`)
+
+        }
+
+
+    </script>
+
+</head>
+
+<body>
+    <H1> USO DE STRINGS</H1>
+    <span>FRASE1: </span><input type="Text" id="frase1"><br />
+    <span>FRASE2: </span><textarea id="frase2"></textarea><br />
+    <button type="button" onclick="comprobar()">hola</button>
+</body>
+
+</html>

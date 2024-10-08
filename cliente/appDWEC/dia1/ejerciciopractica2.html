@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        var listalibros = ["dune", "el libro troll", "geronimo stilton viaje al centro de la tierra", "el señor de los anillos"];
+        var texto = "";
+        function pintarlibros() {
+            for (let i = 0; i < listalibros.length; i++) {
+                texto += "<h1>"+listalibros[i]+"</h1>";
+
+            }
+            document.body.innerHTML += texto;
+        }
+
+        
+        
+    </script>
+
+</head>
+
+<body>
+<script>pintarlibros()</script>
+</body>
+
+</html>

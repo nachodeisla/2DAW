@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+   <link rel="shortcut icon" href="">
+
+   <script>
+      function comprobar() {
+         var frase11 = document.getElementById("frase1").value.lastIndexOf("ado");
+         if (frase11 != -1) {
+            alert(`la posicion es ${frase11}`);
+         }else{
+            alert(`no tenemos el valor "ado"`);
+
+         }
+      }
+
+
+   </script>
+
+</head>
+
+<body>
+   <H1> USO DE STRINGS</H1>
+   <span>FRASE1: </span><input type="Text" id="frase1"><br />
+   <span>FRASE2: </span><textarea id="frase2"></textarea><br />
+   <button type="button" onclick="comprobar()">hola</button>
+</body>
+
+</html>

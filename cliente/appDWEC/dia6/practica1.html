@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table,
+        tr,
+        td {
+            border-style: solid;
+        }
+    </style>
+    <script>
+        var listaCoches = ["1234"];
+        function mostrarLista() {
+            if (document.getElementById("tablaCoches")) {
+                document.getElementById("tablaCoches").remove();
+            }
+            let contenido1 = "<table id='tablaCoches'><tbody>"
+            for (let i = 0; i < listaCoches.length; i++) {
+                contenido1 += `
+                            <tr> 
+                                <td>${listaCoches[i]}</td>
+                            </tr>       
+                            `;
+            }
+            contenido1 += "</tbody></table>"
+            document.body.innerHTML += contenido1;
+
+        }
+
+        function guardarAlFinal() {
+
+            let matriculaNueva = document.getElementById("matricula").value;
+            listaCoches.push(matriculaNueva);
+
+        }
+        function eliminarPosicion() {
+
+            let posicionEliminada = document.getElementById("posicion").value;
+            if (posicionEliminada <= listaCoches.length) {
+                listaCoches.splice(posicionEliminada - 1, 1);
+                alert("posicion eliminada")
+                mostrarLista();
+            } else {
+                alert("esa posicion no existe");
+            }
+        }
+
+        function ordenarAscendente(){
+            listaCoches.sort((a,b) => a-b);
+            mostrarLista();
+        }
+        function ordenarDescendente(){
+            listaCoches.sort((a,b) => b-a);
+            mostrarLista();
+        }
+
+    </script>
+</head>
+
+<body>
+    <p>matricula coche: <input type="text" id="matricula"> </p>
+    <p>
+        posicion:
+        <select name="" id="posicion">
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+            <option>6</option>
+            <option>7</option>
+            <option>8</option>
+            <option>9</option>
+            <option>10</option>
+        </select>
+
+    </p>
+    <p>
+        <button type="button" onclick="mostrarLista()">mostrar lista</button>
+        <button type="button" onclick="guardarAlFinal()">guardar al final</button>
+        <button type="button" onclick="eliminarPosicion()">eliminar posicion</button>
+        <button type="button" onclick="ordenarDescendente()">ordenar descendente</button>
+        <button type="button" onclick="ordenarAscendente()">ordenar ascendente</button>
+    </p>
+
+
+
+</body>
+
+</html>

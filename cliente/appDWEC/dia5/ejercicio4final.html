@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="shortcut icon" href="">
+
+    <script>
+        function comprobar() {
+            let cont = 0;
+            let frase11 = document.getElementById("frase1").value;
+            let posicion = 0;
+
+            while (posicion < frase11.length) {
+                posicion = frase11.indexOf("ado", posicion);
+                if (posicion != -1) {
+                    cont++
+                    posicion = posicion + 3;
+                } else {
+                    posicion = texto.length;
+                }
+            }
+            alert(`el valor "ado" sale un total de ${cont} veces`)
+
+
+        }
+
+
+    </script>
+
+</head>
+
+<body>
+    <H1> USO DE STRINGS</H1>
+    <span>FRASE1: </span><input type="Text" id="frase1"><br />
+    <span>FRASE2: </span><textarea id="frase2"></textarea><br />
+    <button type="button" onclick="comprobar()">hola</button>
+</body>
+
+</html>
