@@ -10,16 +10,19 @@
     <?php
 $numero = $_POST["caja"];
 
+print $numero." es = 1";
     
-    for ($i=1; $i <=$numero ; $i++) { 
-        if ($numero%$i==0) {
-            print $numero/$i."<br>";
-            $numero= $numero/$i;
-            
-        }
-        
-        
+     while ($numero%2 == 0) {
+        $numero = $numero/2; 
+        print " x 2";
      }
+     for ($i = 3; $i <= $numero; $i += 2) {
+        while ($numero % $i == 0) {
+            
+            $numero = $numero/$i;
+            print " x $i ";
+        }
+    }
     
     ?>
 
