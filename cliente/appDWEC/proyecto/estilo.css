@@ -1,0 +1,32 @@
+#inicio {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+.oculto{
+display: none;
+
+}
+.visiblelogin{
+    display: block;
+    color: red;
+}
+.tablavisible{
+    display: block;
+}
+
+table,tr,td,th{
+border: 2xp;
+border-style: solid;
+}
+
+#nuevoProyecto{
+
+    position: absolute;
+    top: 200px;
+    left: 200px;
+    z-index: 1;
+    border: 2px;
+    border-style: solid;
+    background-color: white;
+}

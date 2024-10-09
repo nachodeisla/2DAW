@@ -1,0 +1,57 @@
+[
+    {
+        "marca": "citroen",
+        "modelo": "c4",
+        "color": "rosa",
+        "matricula": "1111aaa",
+        "kilometros": 10000,
+        "cilindrada": 100,
+        "antiguedad": 2010,
+        "foto": "coche1.png",
+        "numeroDeAsientos": 5
+    },
+    {
+        "marca": "ford",
+        "modelo": "mustang",
+        "color": "negro",
+        "matricula": "2222bbb",
+        "kilometros": 5000,
+        "cilindrada": 150,
+        "antiguedad": 2016,
+        "foto": "coche2.png",
+        "numeroDeAsientos": 5
+    },
+    {
+        "marca": "bmw",
+        "modelo": "z4",
+        "color": "blanco",
+        "matricula": "3333ccc",
+        "kilometros": 15000,
+        "cilindrada": 90,
+        "antiguedad": 2011,
+        "foto": "coche3.png",
+        "numeroDeAsientos": 5
+    },
+    {
+        "marca": "citroen",
+        "modelo": "c5",
+        "color": "azul",
+        "matricula": "4444ddd",
+        "kilometros": 10000,
+        "cilindrada": 120,
+        "antiguedad": 2020,
+        "foto": "coche4.png",
+        "numeroDeAsientos": 5
+    },
+    {
+        "marca": "citroen",
+        "modelo": "c3",
+        "color": "rojo",
+        "matricula": "5555eee",
+        "kilometros": 10000,
+        "cilindrada": 110,
+        "antiguedad": 2018,
+        "foto": "coche5.png",
+        "numeroDeAsientos": 5
+    }
+]
