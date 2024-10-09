@@ -1,17 +1,88 @@
-.cta-container{
+*{
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+.cta-container {
     background-image: url(./fondo.jpg);
     background-size: cover;
     height: 350px;
-   
+
     text-align: center;
-    padding:60px 0px 60px 0px;
-    
-}
-.cta-text{
+    padding: 60px 0px 60px 0px;
 
-    
 }
 
-.cta-button{
+
+h2{
+margin-top: 4.5%;
+
+}
+
+.cta-button {
+    
+    border: solid 2px rgb(38, 82, 125);
+    background-color: rgb(58, 122, 187);
+    padding: 8px 16px 8px 16px;
+    font-size: 30px;
+    margin-top: 4%;
+
+}
+
+.cta-button:hover {
+    background-color: rgb(36, 36, 134);
+   /* border: 10px solid rgb(38, 82, 125);*/
+
+}
+
+.navegador ul {
+    list-style: none;
     
 }
+
+
+
+.navegador ul li {
+ 
+    float: right;
+    padding: 7px 14px 7px 14px;
+   
+    border-right: 1px solid rgb(17, 0, 255);
+    background-color: black;
+    color: aliceblue;
+    font-size: 20px;
+    
+}
+.navegador ul li:first-child{
+border-right: 0px;
+
+}
+.navegador ul li a{
+    text-decoration: none;
+    color: aliceblue;
+}
+
+.navegador ul li:hover {
+    background-color: #336699;
+}
+#flecha #anterior{
+    float: left;
+    text-decoration: none;
+    color: rgb(83, 172, 250);
+}
+#flecha #siguiente{
+    float: right;
+    text-decoration: none;
+    color: rgb(83, 172, 250);
+}
+#flecha #siguiente:hover{
+color: #006196;
+text-decoration: underline;
+
+}
+#flecha #anterior:hover{
+    color: #006196;
+    text-decoration: underline;
+    
+    }
+    
