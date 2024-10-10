@@ -1,0 +1,73 @@
+    /*-------------------chuleta---------------------
+    display: flex;    Activar la propiedad flex
+    flex-direction: row;    Colocacion en linea. Atajo (flex-flow:row;)
+    row-gap: 4px;    Darle espacio entre filas. Atajo (gap 4px 8px;)
+    column-gap: 4px;    Darle espacio entre columnas. Atajo (gap 4px 8px;)
+    align-items: end;   mandar al final los items
+    justify-content: center; centra los elementos
+    */
+
+
+
+
+ /*----------ejercicio1---------*/
+ /*
+.contenedor_flex {
+
+    background-color: lightgrey;
+    display: flex;    
+    flex-direction: row;    
+    row-gap: 4px; 
+    column-gap: 4px; 
+    align-items: end;   
+    justify-content: center; 
+    height: 300px;
+    width: 500px;
+}
+
+.flex-item {
+    background-color: cornflowerblue;
+    height: 50px;
+}
+*/
+
+/*----------ejercicio2---------*/
+/*
+.contenedor_flex {
+
+    background-color: lightgrey;
+    display: flex;    
+    flex-direction: row;    
+    row-gap: 4px; 
+    column-gap: 4px; 
+    align-items: start;   
+    justify-content:space-around; 
+    height: 300px;
+    width: 500px;
+}
+
+.flex-item {
+    background-color: cornflowerblue;
+    height: 50px;
+}
+*/
+
+/*----------ejercicio3---------*/
+/*
+.contenedor_flex {
+
+    background-color: lightgrey;
+    display: flex;    
+    flex-direction: column-reverse;  
+    row-gap: 4px; 
+    column-gap: 4px;
+    justify-content: space-around; 
+    height: 300px;
+    width: 500px;
+}
+
+.flex-item {
+    background-color: cornflowerblue;
+    height: 50px;
+}
+*/
