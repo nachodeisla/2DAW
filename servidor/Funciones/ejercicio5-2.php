@@ -11,6 +11,8 @@
     <?php
 $numeroFilas = $_POST["caja1"];
 $numeroColumnas = $_POST["caja2"];
+
+function ejercicio51($numeroFilas, $numeroColumnas){
     print "<form action= \"ejercicio5-3.php\" method=post>";
 for ($i=0; $i <$numeroFilas ; $i++) { 
     for ($j=0; $j <$numeroColumnas ; $j++) { 
@@ -24,7 +26,15 @@ for ($i=0; $i <$numeroFilas ; $i++) {
     print "<input type=\"hidden\" name=\"caja1\" value=$numeroFilas>";
     print "<input type=\"hidden\" name=\"caja2\" value=$numeroColumnas>";   
     print "</form>";
+
+}
+
+ejercicio51();
     ?>
+
+
+
+
 
 </body>
 </html>

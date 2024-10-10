@@ -19,7 +19,9 @@
     <p>N<input type=\"number\" name=\"caja\"></p>
     <button type=\"submit\">Enviar</button>
     <button type=\"reset\">Reset</button>
-    </form>"
+    </form>";
+
+  
     ?>
 </body>
 </html>

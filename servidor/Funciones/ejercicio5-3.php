@@ -12,6 +12,8 @@
 
 $numeroFilas = $_POST["caja1"];
 $numeroColumnas = $_POST["caja2"];
+
+function caja1($numeroFilas, $numeroColumnas){
 print "tabla original";
 print "<table border=2><tbody>";
 for ($i=0; $i <$numeroFilas ; $i++) { 
@@ -24,14 +26,16 @@ for ($i=0; $i <$numeroFilas ; $i++) {
     print "</tr>";
 }
     print "</tbody></table>";
+}
 //-----------------------------------------------------------------
 $numeroFilas = $_POST["caja1"];
 $numeroColumnas = $_POST["caja2"];
+function caja2($numeroFilas, $numeroColumnas){
 print "tabla final";
 print "<table border=2><tbody>";
-for ($i=0; $i <$numeroFilas ; $i++) { 
+for ($i=$numeroFilas-1; $i >=0; $i--) { 
     print "<tr>";
-    for ($j=0; $j <$numeroColumnas ; $j++) { 
+    for ($j=$numeroColumnas-1; $j >=0 ; $j--) { 
         $valorCaja = $_POST["caja$i$j"];
         
         print "<td>$valorCaja</td>";
@@ -39,6 +43,10 @@ for ($i=0; $i <$numeroFilas ; $i++) {
     print "</tr>";
 }
     print "</tbody></table>";
+}
+caja1();
+caja2();
+
 
     ?>
 
