@@ -7,8 +7,9 @@
 </head>
 <body>
     <?php 
-     print("<form action=\"Ejercicio2-2.php\" method=post>
-     <p>Escriba algo: <input type=\"text\" name=\"caja\"></p>
+     print("<form action=\"Ejercicio3-2.php\" method=post>
+     <p>Escriba el patron: <input type=\"text\" name=\"patron\"></p>
+     
      <button type=\"submit\">Enviar</button>
      <button  type=\"reset\">Borrar</button>
      </form>");

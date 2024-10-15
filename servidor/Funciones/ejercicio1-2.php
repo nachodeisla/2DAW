@@ -8,10 +8,7 @@
 <body>
 
     <?php
-    $numero = $_POST["caja"];
-
-function ejercicio1($numero){
-
+$numero = $_POST["caja"];
     $cont=0;
     for ($i=1; $i <= $numero ; $i++) { 
        if ($numero%$i==0) {
@@ -22,10 +19,6 @@ function ejercicio1($numero){
     }else {
         print "no es un numero primo";
     }
-
-}
-
-ejercicio1();
     ?>
 
 </body>

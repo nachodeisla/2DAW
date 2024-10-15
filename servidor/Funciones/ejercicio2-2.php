@@ -9,7 +9,7 @@
 
     <?php
 $numero = $_POST["caja"];
-function ejercicio2($numero){
+
 print $numero." es = 1";
     
      while ($numero%2 == 0) {
@@ -23,9 +23,7 @@ print $numero." es = 1";
             print " x $i ";
         }
     }
-}
-
-ejercicio2();
+    
     ?>
 
 </body>

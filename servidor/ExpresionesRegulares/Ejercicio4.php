@@ -7,8 +7,8 @@
 </head>
 <body>
     <?php 
-     print("<form action=\"Ejercicio2-2.php\" method=post>
-     <p>Escriba algo: <input type=\"text\" name=\"caja\"></p>
+     print("<form action=\"Ejercicio4-2.php\" method=post>
+     <p>Escriba un numero de telefono de españa: <input type=\"text\" name=\"telfEsp\"></p>
      <button type=\"submit\">Enviar</button>
      <button  type=\"reset\">Borrar</button>
      </form>");
