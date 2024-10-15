@@ -8,8 +8,6 @@
     */
 
 
-
-
  /*----------ejercicio1---------*/
  /*
 .contenedor_flex {
@@ -52,6 +50,7 @@
 }
 */
 
+
 /*----------ejercicio3---------*/
 /*
 .contenedor_flex {
@@ -69,5 +68,74 @@
 .flex-item {
     background-color: cornflowerblue;
     height: 50px;
+}
+*/
+
+
+/*----------ejercicio4---------*/
+/*
+.contenedor_flex {
+    display: flex;
+    background-color: lightgrey;
+    align-items: stretch;
+    
+    flex-direction: row;
+    
+    column-gap: 8px;
+    justify-content: center;
+    height: 300px;
+    width: 500px;
+}
+
+.flex-item {
+    background-color: cornflowerblue;
+   
+}
+*/
+
+
+/*----------ejercicio5---------*/
+/*
+.contenedor_flex {
+    display: flex;
+    background-color: lightgrey;
+  align-items: center;
+    justify-content: space-evenly;
+    flex-direction: row;
+    column-gap: 8px;
+
+    height: 300px;
+    width: 500px;
+}
+.flex-item {
+    background-color: cornflowerblue;
+    height: 50px;
+
+}
+.flex-item:hover{
+    background-color: rgb(174, 15, 174);
+flex-grow: 2;
+transition: 1s;
+}
+*/
+
+
+/*----------ejercicio6---------*/
+/*
+.contenedor_flex {
+    display: flex;
+    background-color: lightgrey;
+  align-items: center;
+   
+    flex-direction: row;
+    column-gap: 15px;
+flex-wrap: wrap;
+    height: 300px;
+    width: 500px;
+}
+.flex-item {
+    background-color: cornflowerblue;
+    height: 50px;
+
 }
 */
