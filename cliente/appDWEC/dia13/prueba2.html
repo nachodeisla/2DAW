@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script src="clasealumno.js"></script>
+    <script>
+        var listaAlumnos = []; // variable vacia
+        window.onload = () => {
+
+            alumno1 = new Alumno("Nacho", "de Isla", 11, ["Servidor", "Cliente"]);
+            alumno1.mostrarDetalles();
+        }
+        window.onload = () => {
+            cargarDatosAlumno();
+        }
+        async function cargarDatosAlumno() {
+            let datosAlumnoTexto = await fetch("datosalumno.json");
+            listaAlumnos = await datosAlumnoTexto.json();
+
+            console.log(listaAlumnos)
+            if (listaAlumnos.length > 0) {
+                pintarAlumnos();
+            }
+        }
+        function pintarAlumnos(Lista) {
+            lista.forEach(alumno => {
+                htmldiv = `
+            <div>
+            <p>El nombre del alumno es : ${alumno.nombre}</p>
+            <p>Los apellidos del alumno son : ${alumno.apellidos}</p>
+            <p>El numero de matricula es : ${alumno.numeroMatricula}</p>
+            <p>Los modulos del alumno son : ${alumno.listaDeModulos}</p>
+        `
+            }
+
+            );
+            document.body.insertAdjacentHTML("beforeend", div);
+        }
+
+        function añadirAlumno(){
+            alumno1 = new Alumno("jose","santos",15,["dwec"])
+listaAlumnos.push(alumno1);
+pintarAlumnos(listaAlumnos);
+        }
+
+    </script>
+
+
+</head>
+
+<body>
+<button type="button" onclick="añadirAlumno()">Añadir</button>
+</body>
+
+</html>

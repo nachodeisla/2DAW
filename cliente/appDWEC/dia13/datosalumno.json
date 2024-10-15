@@ -1,0 +1,20 @@
+[
+{
+    "nombre":"nacho",
+    "apellidos":"de Isla",
+    "matricula": 11,
+    "listaModulos":["dwec","dwes"]
+},
+{
+    "nombre":"adri",
+    "apellidos":"sanchez",
+    "matricula": 12,
+    "listaModulos":["dwec","dwes","empresa"]
+},
+{
+    "nombre":"daniel",
+    "apellidos":"estebam",
+    "matricula": 13,
+    "listaModulos":["dwec","dwes","ingles"]
+}
+]
