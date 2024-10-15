@@ -11,8 +11,8 @@
     print"
     <h1>DATOS PERSONALES</h1>
     <form action=\"ejercicio1-2.php\" method=\"POST\">
-    <p>Escriba su nombre (una sola palabra): <input type=\"text\" name=\"nombre\"></p>
-    <p>Escriba su apellido (dos palabras): <input type=\"text\" name=\"apellidos\"></p>
+    <p>Escriba su nombre: <input type=\"text\" name=\"nombre\"></p>
+    <p>Escriba su apellido: <input type=\"text\" name=\"apellidos\"></p>
     <button type=\"submit\">ENVIAR</button>
     <button type=\"reset\">ENVIAR</button>
     <form>

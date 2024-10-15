@@ -10,8 +10,8 @@
 <?php
 $nombre=$_POST["nombre"];
 $apellidos=$_POST["apellidos"];
-$nombreValido='/^[[:alpha:]\ñ\Ñ\ç\Ç]+$/i';
-$apellidoValido='/^[[:alpha:]\ñ\Ñ\ç\Ç]+[[:space:]]+[[:alpha:]\ñ\Ñ\ç\Ç]+$/i';
+$nombreValido='/^([[:alpha:]\ñ\Ñ\ç\Ç]+[[:space:]])*[[:alpha:]\ñ\Ñ\ç\Ç]+$/i';
+$apellidoValido='/^([[:alpha:]\ñ\Ñ\ç\Ç]+[[:space:]])+[[:alpha:]\ñ\Ñ\ç\Ç]+$/i';
 
 if (preg_match($nombreValido,$nombre)&&(preg_match($apellidoValido,$apellidos))) {
     print "Tu nombre es: $nombre. <br>";

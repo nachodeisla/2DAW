@@ -17,7 +17,6 @@ fieldset {
 legend {
   background-color: #8e53ff;
   
-  
 }
 
 </style>
