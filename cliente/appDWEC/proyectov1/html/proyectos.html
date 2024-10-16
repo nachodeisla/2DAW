@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <title>Gestiona IES</title>
-  <link rel="stylesheet" href="./css/aterrizaje.css">
+  <link rel="stylesheet" href="../css/aterrizaje.css">
   <style>
         table,tr,th,td{
             border: 2px solid blue
@@ -24,8 +24,49 @@
             display: none;
         }
     </style>
-    <script src="./clases/Proyecto.js"></script>
-    <script src="./js/Proyectos.js"></script>
+    <script src="../js/Proyecto.js"></script>
+    <script>
+        onload = ()=>{
+            cargarProyectos();
+            pintarProyectos(listaProyectos);
+        }
+        function crearNuevo(){
+            document.getElementById("nuevo").className="visible";
+        }
+        function volver(){
+            location.href="aterrizaje.html"
+        }
+        function imprimir(){
+            window.print();
+        }
+        function ordenar(campo){
+            listaProyectos.sort((a,b)=>{
+                if (a[campo]>b[campo])return 1;
+                else return -1;
+            });
+            pintarProyectos(listaProyectos);
+        }
+        var listaProyectos=[];
+        function cargarProyectos(){                                                                                     
+            listaProyectos.push(new Proyecto(1, "proyecto1","1",new Date(),new Date(),"cliente1","tipo1",1000,"Ana Marquez"));
+            listaProyectos.push(new Proyecto(2, "proyecto2","2",new Date(),new Date(),"cliente2","tipo2",1000,"Ana Marquez"));
+            listaProyectos.push(new Proyecto(3, "proyecto3","3",new Date(),new Date(),"cliente3","tipo3",1000,"Ana Marquez"));
+        }
+        function pintarProyectos(lista){
+            let tbody=document.getElementsByTagName("tbody")[0];
+            tbody.innerHTML="";
+            let texto="";
+            lista.forEach(elemento => {
+                texto+=`<tr>
+                    <td>${elemento.codigo}</td>
+                    <td>${elemento.nombre}</td>
+                    <td>${elemento.presupuestoInicial}</td>
+                    <td><img src=\"/papelera.png\"></td>
+                </tr>`
+            });
+            tbody.insertAdjacentHTML("beforeend",texto);
+        }
+    </script>
 </head>
 <body translate="no" >
   <div id="container">
@@ -90,24 +131,22 @@
     <div id="acciones">
         <button type="button" id="btnCancelar" onclick="volver()">Cancelar</button>
         <button type="button" id="btnNuevo" onclick="crearNuevo()">Nuevo</button>
-        <button type="button" id="btnOrdenar" onclick="ordenar('nombre')">Ordenar por Nombre</button>
+        <button type="button" id="btnOrdenar" onclick="ordenar('nombre')">Ordenar por nombre</button>
         <button type="button" id="btnImprimir" onclick="imprimir()">Imprimir</button>
     </div>
     <div id="nuevo" class="oculto">
         <p>X</p>
         <p>Codigo<input type="text" id="codigo"></p>
         <p>Descripcion<input type="text" id="descripcion"></p>
-        <p>Fecha Inicio<input type="text" id="fechainicio"></p>
-        <p>Fecha Limite<input type="text" id="fechalimite"></p>
-        <p>estado<input type="text" id="estado"></p>
-        <p>cliente<input type="text" id="cliente"></p>
-        <p>tipo<input type="text" id="tipo"></p>
-        <p>presupuesto inicial<input type="text" id="presupuestoinicial"></p>
-        <p>responsable<input type="text" id="responsable"></p>
-
-        <p><button type="button" id="guardar" onclick="crearNuevo()"class="oculto">Guardar</button><button type="button" id="actualizar" onclick="actualizar()"class="oculto">Actualizar</button></p>
+        <p>Presupuesto<input type="text" id="presupuesto"></p>
+        <p><button type="button" id="guardar" onclick="guardar()">Guardar</button></p>
     </div>
-    
   <footer><a target="blank" href="https://www.educa2.madrid.org/web/iescanaveral">IES EL CAÑAVERAL</a></footer>
 </div>
+  
+  
+  
+  
+  
+
 </body>
