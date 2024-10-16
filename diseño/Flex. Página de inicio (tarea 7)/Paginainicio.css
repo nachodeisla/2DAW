@@ -16,16 +16,17 @@
     font-family: 'Poppins', sans-serif;
 }
 .cabecera {
-    margin: 0%;
+    margin: 0 auto;
     width: 90%;  
-    max-width: 1200px;
+    max-width: 1200px; 
+    height: var(--altura-nav);
 }
 .cabeceraInicio {
     background-color: #239b56;
     color: #f2f2f2;
     
   
-    height: var(--altura-nav);
+   
 }
 
 
@@ -35,8 +36,12 @@
     justify-content: space-around;
     align-items: center;
     height: 100%;
+    
 }
+.menuLateralDrch a{
+padding: 12px;
 
+}
 a {
     color: #f2f2f2;
     text-decoration: none;
