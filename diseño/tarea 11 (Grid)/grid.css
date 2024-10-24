@@ -1,0 +1,48 @@
+*{
+box-sizing: border-box;
+padding: 0;
+margin: 0;
+
+}
+
+.contenedor{
+    display: grid;
+    grid-template-columns: r1epeat(3, 1fr);
+    grid-template-areas:
+    "area1 area1 area1"
+    "area2 area3 area4"
+    "area2 area5 area6"
+    ;
+    /* grid-template-rows: 20px repeat(3, auto); */
+
+    width: 300px;
+    height: 300px;
+}
+.celda1{
+    background-color: blue;
+    grid-area: area1;
+    /* grid-column-start: 1;
+    grid-column-end: 3; */
+}
+
+.celda2{
+    background-color: yellow;
+    
+}
+
+.celda3{
+    background-color: red;
+    grid-area: area2;
+    /* grid-row-start: 2;
+    grid-row-end: 4; */
+}
+
+.celda4{
+    background-color: green;
+}
+.celda5{
+    background-color: purple;
+}
+.celda6{
+    background-color: pink;
+}
