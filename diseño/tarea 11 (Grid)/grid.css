@@ -7,42 +7,157 @@ margin: 0;
 
 .contenedor{
     display: grid;
-    grid-template-columns: r1epeat(3, 1fr);
+    width: 450px;
+    
+    /*------descomentar para ejercicio 1------*/
+    /* 
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas:
+    "area1 area2 area3"
+    "area5 area4 area6"
+    "area7 area8 area9"
+    ; 
+    */
+
+    /*------descomentar para ejercicio 2------*/
+    /*
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas:
+    "area1 area1 area1"
+    "area2 area3 area4"
+    "area5 area6 area7"
+    "area8 area9 ."
+    ; 
+    */
+
+    /*------descomentar para ejercicio 3------*/
+    /*
+    grid-template-columns: repeat(3, 1fr);
     grid-template-areas:
     "area1 area1 area1"
     "area2 area3 area4"
     "area2 area5 area6"
+    "area2 area7 area8"
+    "area2 area9 ."
+    ;  
+    */
+
+    /*------descomentar para ejercicio 4------*/
+    /* 
+    grid-template-columns: repeat(3, 1fr); 
+    grid-template-areas:
+    "area1 area1 area1 "
+    "area2 area3 area4 "
+    "area2 area5 area6 "
+    ;   
+    */
+
+    /*------descomentar para ejercicio 5------*/
+    /* 
+    grid-template-columns: repeat(3, 1fr); 
+    grid-template-areas:
+    "area1 area1 area2 area2"
+    "area3 area4 area4 area4"
+    "area5 area5 area5 area6"
     ;
-    /* grid-template-rows: 20px repeat(3, auto); */
+    */
 
-    width: 300px;
-    height: 300px;
-}
-.celda1{
-    background-color: blue;
-    grid-area: area1;
-    /* grid-column-start: 1;
-    grid-column-end: 3; */
-}
+    /*------descomentar para ejercicio 6------*/
 
-.celda2{
-    background-color: yellow;
+    /*grid-template-columns: repeat(3, 1fr);*/
+        
+
+    /*------descomentar para ejercicio 7------*/
+    /* 
+    grid-template-columns: repeat(3, 1fr);  
+    grid-template-areas:
+    ". area1 area1 "
+    "area2 area3 area3 "
+    "area4 area4 area4 "
+    ;  
+    */
+
+
+    /*------descomentar para ejercicio 8------*/
     
+    
+    /*
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas:
+    "area1 area4  "
+    "area2 area5  "
+    "area3 area6  "
+    ;
+    */
+    
+
+    
+   
 }
 
+.celda{
+    text-align: center;
+    border: solid;
+    border-radius: 7px;
+    border-color: #ffa94d;
+    color: #d9480f;
+    background-color:  #ffd8a8;
+    padding: 10px 10px;
+}
+
+
+
+/* ---- descomentar para ejercicio 6 ---- */
+
+/* .celda1 {
+    order:6;
+}
+.celda2{
+    order:1;
+}
 .celda3{
-    background-color: red;
-    grid-area: area2;
-    /* grid-row-start: 2;
-    grid-row-end: 4; */
+    order:2;
 }
-
 .celda4{
-    background-color: green;
+    order:3;
 }
 .celda5{
-    background-color: purple;
+    order:4;
 }
 .celda6{
-    background-color: pink;
+    order:5;
+} */
+
+
+
+
+/* ---- descomentar para ejercicio 1/2/3/4/5/7/8 ---- */
+/* 
+.celda1 {
+    grid-area: area1;
 }
+.celda2{
+    grid-area: area2;
+}
+.celda3{
+    grid-area: area3;
+}
+.celda4{
+    grid-area: area4;
+}
+.celda5{
+    grid-area: area5;
+}
+.celda6{
+    grid-area: area6;
+}
+.celda7{
+    grid-area: area7;
+}
+.celda8{
+    grid-area: area8;
+}
+.celda9{
+    grid-area: area9;
+} 
+*/
