@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        onload = () => {
+            crearPagina2();
+
+        
+
+        }
+
+        function crearPagina1() {
+            for (let a = 0; a < 30; a++) {
+
+                let contenidoHTML = "<div>"
+                contenidoHTML += `-----------------------------------comienza div ${a + 1}-----------------------------------------------`
+                for (let i = 0; i < 3; i++) {
+                    contenidoHTML += `<p> parrafo ${i}</p>`
+                }
+                for (let i = 1; i < 3; i++) {
+                    contenidoHTML += `<img src='./img/foto${i}.jpg' width=200/>`
+                }
+                contenidoHTML += `<table border =2><tbody>`
+                for (let i = 0; i < 3; i++) {
+                    contenidoHTML += `<tr>`
+                    for (let j = 0; j < 2; j++) {
+                        contenidoHTML += `<td>fila ${i} celda ${j}</td>`
+                    }
+                    contenidoHTML += `</tr>`
+                }
+                contenidoHTML += "</div>"
+                document.body.insertAdjacentHTML("beforeend", contenidoHTML)
+
+
+            }
+
+        }
+        function crearPagina2() {
+            for (let a = 0; a < 30; a++) {
+
+                let div = document.createElement("div")
+                document.body.insertAdjacentElement("beforeend", div)
+
+                for (let i = 0; i < 3; i++) {
+                    let parrafo = document.createElement("p");
+                    div.appendChild(parrafo);
+                    parrafo.innerHTML = `parrafo ${i}`;
+                    // parrafo.appendChild(document.createTextNode(`parrafo ${i}`))
+                }
+                for (let i = 1; i < 3; i++) {
+                    let imagen = document.createElement("img");
+                    div.appendChild(imagen);
+                    imagen.src = `./img/foto${i}.jpg`;
+                    imagen.width = 100;
+                }
+
+
+                let tabla = document.createElement("table")
+                div.appendChild(tabla)
+                tabla.border=3;
+                let tbody = document.createElement("tbody")
+                tabla.appendChild(tbody)
+                
+                for (let i = 0; i < 3; i++) {
+                    let tr = document.createElement("tr")
+                    tbody.appendChild(tr)
+                    for (let j = 0; j < 2; j++) {
+                        let td = document.createElement("td")
+                        tr.appendChild(td)
+                        td.innerHTML = `fila ${i} celda ${j}`;
+                        
+                    }
+                    
+                }
+               
+            
+
+
+            }
+
+        }
+        function ejercicio1() {
+
+            let div3 = document.getElementsByTagName("div")[2];
+            div3.style.backgroundColor = "red";
+
+            div3.className = "divRojo";
+
+
+        }
+        function ejercicio2() {
+
+            let imagenes = [...document.getElementsByTagName("img")]
+            imagenes.forEach(imagen => imagen.style.border = "4px solid green");
+
+            // [...document.imagen].forEach(imagen.style.border="4px solid green")
+        }
+
+        function ejercicio3() {
+            document.getElementsByTagName("div")[2].getElementsByTagName("p")[2].innerHTML = "cambiado"
+
+        }
+        function ejercicio4() {
+            let divs = [...document.getElementsByTagName("div")].forEach(div => {
+                if (div.className == "divRojo") {
+                    //div.style.visibility="hidden";
+                    div.style.display = "none";
+                }
+            })
+
+
+        }
+
+        function ejercicio4_1() {
+            [...document.querySelectorAll("div.divRojo")].forEach(div => div.style.display = "none")
+
+
+        }
+
+        function ejercicio5() {
+
+            [...document.getElementsByTagName("div")[0].children].forEach(hijo => hijo.style.border = "4px solid pink");
+            [...document.querySelectorAll("div")[0].children].forEach(hijo => hijo.style.border = "4px solid pink");
+            [...document.querySelectorAll("div:nth-child(1)>*")[0].children].forEach(hijo => hijo.style.border = "4px solid pink")
+        }
+
+
+        function ejercicio6() {
+
+
+            let boton3 = document.getElementById("boton3").previousSibling.style.display = "none";
+        }
+
+    </script>
+</head>
+
+<body>
+    <button type="button" onclick="ejercicio1()">ejercicio1</button>
+    <button type="button" onclick="ejercicio2()">ejercicio2</button>
+    <button type="button" onclick="ejercicio3()" id="boton3">ejercicio3</button>
+    <button type="button" onclick="ejercicio4()">ejercicio4</button>
+    <button type="button" onclick="ejercicio5()">ejercicio5</button>
+    <button type="button" onclick="ejercicio6()">ejercicio6</button>
+</body>
+
+</html>

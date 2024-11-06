@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="comic.js"></script>
+    <style>
+        img {
+            float: right;
+            width: 50px;
+        }
+    </style>
+    <script>
+
+
+        listaComics = [];
+        function cargarComics() {
+            listaComcis.push({ "nombre": "nacho", "titulo": "millner", "foto": "./imegens/fotomilner", "precio": 5.99, "codigo": 1110 })
+            var comic1 = new Comic("José Escobar Saliente", "Zipi y Zape", "./imagenes/zipiyzape.jpeg", 5.99, 1111);
+            var comic2 = new Comic("Stan Lee y Steve Ditko", "Spiderman", "/imagenes/spiderman.gif", 7.99, 1112);
+            var comic3 = new Comic("Kisimoto", "Naruto", "./imagenes/naruto.png", 8.99, 1113);
+            var comic4 = new Comic("Francisco Ibáñez", "13 rue del percebe", "./imagenes/13ruedelpercebe.jpg", 4.99, 1114);
+            var comic5 = new Comic("René Goscinny", "Asterix y obelix", "./imagenes/asterixyobelix.jpg", 4.99, 1115);
+            listaComics.push(comic1);
+            listaComics.push(comic2);
+            listaComics.push(comic3);
+            listaComics.push(comic4);
+            listaComics.push(comic5);
+        }
+
+// botobn con expresion flecha pasa "comic"
+        function guardarCarrito() {
+
+            let cookies = Document.cookie.split(";");
+            let carritoCookies = cookies.find(cookie => cookie.split("=")[0].trim() == "carrito")
+            if (carritoCookies) {
+                listaProductos = JSON.parse(cookieCarrito.split("=")[1])
+                listaProductos.push(comic)
+                document.cookie=`carrito=${JSON.stringify(listaProductos)}`;
+
+                let valorCarrito = parseInt(carritoCookies.split("=")[1]);
+                
+            }
+
+        }
+
+
+        function mostrarCarrito(){
+
+            let carritoCookies = Document.cookie.split(";").find(cookie => cookie.split("=")[0].trim() == "carrito")
+            if (carritoCookies) {
+                listaProductos = JSON.parse(cookieCarrito.split("=")[1])
+                
+            }
+            alert(`hay ${listaProductos.length} en el carrito`)
+        }
+
+        function crearCookie(valorElegido) {
+            var fecha = new Date();
+            fecha.setTime(fecha.getTime() + (7 * 24 * 60 * 60 * 1000));
+
+            let cookies = Document.cookie.split(";");  // document.cookie.indexOf("");
+            
+            let carritoCookies = cookies.find(cookie => cookie.split("=")[0].trim() == "carrito")
+            if (!carritoCookies) {
+                document.cookie = "carrito=[]";
+            }
+
+        }
+
+
+        function cargarSelect(listaComics) {
+            let select = document.getElementById("selectComics");
+            listaComics.forEach(comic => {
+                select.insertAdjacentHTML("beforeend", `<option value=${comic.codigo}>${comic.nombre}</option>`)
+            });
+
+        }
+        function mostrarComic(valor) {
+
+            let texto = `<img src=${comic.foto}>
+                        <p>auor: ${comic.autor}</p>
+                        <p>nombre: ${comic.nombre}</p>
+                        <p>precio: ${comic.precio} €</p>`;
+        }
+
+
+
+        function guardarEnCarrito() {
+
+        }
+    </script>
+</head>
+
+<body>
+    <label for="">Selecciona un comic</label>
+    <select name="" id="selectComics" onchange="crearCookie('comics',this.value)">
+        <option value="zipiyzape" onclick="mostrarCookie()">zipi y zape</option>
+        <option value="spiderman" onclick="mostrarCookie()">spiderman</option>
+        <option value="naruto" onclick="mostrarCookie()">naruto</option>
+        <option value="13ruedelpercebe" onclick="mostrarCookie()">13rue del percebe</option>
+        <option value="asterixyobelix" onclick="mostrarCookie()">asterix y obelix</option>
+    </select>
+    <img src="carrito.jpg" alt="">
+
+    <div>
+
+    </div>
+
+</body>
+
+</html>

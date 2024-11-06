@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .oculto {
+            display: none;
+        }
+
+        .visible {
+            visibility: visible;
+        }
+
+        img {
+            width: 200px;
+            height: 200px;
+        }
+    </style>
+
+    <script>
+    var intervalo;
+    var contador;
+       
+        onload=()=>{
+        document.getElementById("boton").addEventListener("click",()=>{
+            
+            intervalo =setInterval(cuentaAtras, 200);
+            contador=parseInt(document.getElementById("numero").value);
+        });
+}
+
+        function cuentaAtras() {
+            
+       
+            document.getElementById("caja1").innerHTML=contador;
+            contador--;
+            if (contador==0) {
+                clearInterval(intervalo)
+            }
+        }
+        
+       
+
+    </script>
+</head>
+
+<body>
+    <table>
+        <tbody>
+            <tr>
+                <td>cuenta atras desde: <input type="number" id="numero"></td>
+                <td><button type="button" id="boton" onclick="cuentaAtras()">pulsa aqui</button></td>
+                
+            </tr>
+        </tbody>
+    </table>
+    <div id="caja1">
+
+    </div>
+</body>
+
+</html>

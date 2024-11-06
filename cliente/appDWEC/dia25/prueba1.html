@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        onload=()=>{
+            document.getElementById("botonAceptar").addEventListener("click", validarForm);
+        }
+
+        function validarFrom(){
+            let usuario = document.getElementById("usuario");
+            let clave = document.getElementById("clave");
+            var error = false;
+            // comprobar el usuario
+            if (usuario.value.trim()="") {
+                error = false;
+                usuario.style.border= "2px solid red";
+            }
+
+
+            // comprobar la clave
+
+            if (!error) {
+                document.forms[0].submit();
+            }
+
+
+        }
+    </script>
+</head>
+<body>
+    <form action="">
+        <p>usuarios: <input type="text" id="usuario"></p>
+        <p>clave: <input type="password" id="clave"></p>
+        <p><button type="button" id="botonAceptar">aceptar</button>
+        <button type="reset">borrar</button></p>
+
+    </form>
+</body>
+</html>
