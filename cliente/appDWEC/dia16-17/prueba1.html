@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+function mostrar(){
+    let caracter =String.fromCharCode(event.charCode || event.keyCode);
+    let listaNoValida = ['a','e','i','o','u']
+if (listaNoValida.indexOf(caracter.toLocaleLowerCase())!=-1) {
+    event.preventDefault();
+}
+
+}
+function crearEvento(){
+// let boton1= document.getElementById("boton1");
+// boton1.addEventListener(event,()=> mostrarMensaje())
+    document.getElementById("boton2").addEventListener("click",()=>{mostrarMensaje('hola')});
+    document.getElementById("boton3").onclick=()=>mostrarMensaje('adios');
+    document.getElementById("boton4").setAttribute("onclick","mostrarMensaje('adios')");
+}
+
+function mostrarMensaje(texto){
+alert(texto);
+
+}
+
+function mostrarCalculo(numero1, numero2){
+alert("el resultado es "+numero1*numero2 );
+
+}
+
+function crearTablaMultiplicar(){
+let numero = 9;
+let resultado=0;
+var texto = "<table><body>";
+for (let i = 0; i <= 10; i++) {
+    texto+=`<tr><td>${numero} x ${i} =</td><td><button type=button onclick=mostrarCalculo(${i},${numero})> calcular ${numero} x ${i}</button></td></tr>`;
+    
+   //document.getElementById("boton"+numero+"x"+i).setAttribute("onclick","mostrarCalculo('resultado')");
+}
+texto += "</body></table>";
+document.body.insertAdjacentHTML("beforeend", texto);
+
+
+}
+
+</script>
+<body>
+    <input type="text" onkeypress="mostrar()"></input>
+
+    <button type='button' id="boton1" onclick="crearEvento()">boton1</button>
+    <button type='button' id="boton2">boton2</button>
+    <button type='button' id="boton3">boton3</button>
+    <button type='button' id="boton4">boton4</button>
+    <button type='button' id="boton5" onclick="crearTablaMultiplicar()">boton5</button>
+    <div id="capa1"></div>
+</body>
+</html>
