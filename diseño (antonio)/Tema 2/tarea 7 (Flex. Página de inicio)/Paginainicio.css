@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap');
+
+:root {
+    --altura-nav: 70px;
+}
+
+* {
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.body {
+    background-color: #f2f2f2;
+    font-family: 'Poppins', sans-serif;
+}
+.cabecera {
+    margin: 0 auto;
+    width: 90%;  
+    max-width: 1200px; 
+    height: var(--altura-nav);
+}
+.cabeceraInicio {
+    background-color: #239b56;
+    color: #f2f2f2;
+    
+  
+   
+}
+
+
+
+.nav__contenedor {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+    
+}
+.menuLateralDrch a{
+padding: 12px;
+
+}
+a {
+    color: #f2f2f2;
+    text-decoration: none;
+}
+
+.inicio {
+    display: flex;
+    align-items: center;
+    height: calc(100vh - var(--altura-nav));
+}
+
+.inicio__texto {
+    flex-basis: 70%;
+}
+
+.inicio__figure {
+    flex-basis: 30%;
+}
+
+.inicio__imagen {
+    width: 100%;
+    display: block;
+    border-radius: 33%;
+}
+
+.inicio__titulo {
+    font-size: 4vw;
+}
+
+.inicio__parrafo {
+    font-size: 2vw;
+}
+
+.btnContinuar {
+    font-size: 2vw;
+    background-color: #1e8449;
+    color: #fff;
+    border-radius: 6px;
+    margin-top: 1.5em;
+    padding: 5px 10px;
+}
