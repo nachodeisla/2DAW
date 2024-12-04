@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css.css">
+</head>
+<body>
+    <div>
+        <form action=""  class="formulario">
+            <div class="caja">
+                <label class="texto">Nombre: </label>
+                <div><input class="cajaRellenar" type="text" id="nombre" pattern="[A-Za-z]{3,15}" name="nombre" placeholder=" Escribe tu usuario"></div>
+            </div>
+            <div class="caja">
+                <label class="texto">Password: </label>
+                <div><input class="cajaRellenar" type="text" id="password" pattern="[A-Za-z]{3,15}" name="password" placeholder=" Titular de la consulta"></div>
+            </div>
+            <div class="caja">
+                <label class="texto">Email: </label>
+                <div><input class="cajaRellenar" type="text" id="email" name="email" placeholder=" Email"></div>
+            </div>
+            <div class="caja">
+                <label class="texto">Telefono: </label>
+                <div><input class="cajaRellenar" type="tel" id="telefono" name="telefono" placeholder=" +34 666 777 888"></div>
+            </div>
+            <div class="caja">
+                <label class="texto">URL: </label>
+                <div><input class="cajaRellenar" type="text" id="url" name="url" placeholder=" http://dominio.com"></div>
+            </div>
+            <div class="caja">
+                <label class="texto">Edad: </label>
+                <div><input class="cajaRellenar" type="number" id="edad" min="18" max="100" name="edad" placeholder="18-100"></div>
+            </div>
+            <div class="caja">
+                <label class="texto">Fecha de nacimiento: </label>
+                <div><input class="cajaRellenar" type="date" id="fechaNacimiento" name="fechaNacimiento" placeholder=""></div>
+            </div>
+            <div class="cajaMensaje">
+                <label class="texto">Mensaje: </label>
+                <div><textarea class="cajaRellenar" id="mensaje" maxlength="300" name="mensaje" placeholder="Describe brevemente en menos de 300 caracteres"></textarea></div>
+            </div>
+            <div><input type="submit" id="boton" name="boton" placeholder=""></div>
+        </form>
+    </div>
+</body>
+</html>
