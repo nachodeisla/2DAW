@@ -1,0 +1,170 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    overflow: hidden;
+    background-color: rgb(69, 130, 69);
+}
+
+.container {
+    position: absolute;
+    display: flex;
+    flex-flow: column-reverse;
+    transform-style: preserve-3d;
+    gap: 20px;
+    transform: rotateY(-11deg) rotateX(10deg) rotateZ(10deg);
+}
+
+ #imagenes{
+    opacity: 0%;
+    transition: 2.5s ;
+   
+}
+
+
+body.nieve{
+    background-image: url("./fondo.gif") ;
+    transition: 2.5s ;
+}
+
+#imagenes.visible{
+    opacity: 100%;
+    
+}
+
+
+.text {
+
+    position: relative;
+    width: 100px;
+    height: 100px;
+    transform-style: preserve-3d;
+    transition: 2.5s ease-in-out;
+    transition-delay: calc(0.25s * var(--j));
+}
+
+.container.newyear .text {
+    transform: rotateY(calc(-720deg * 1));
+}
+
+.container.newyear .text:last-child {
+    transform: rotateX(calc(-1260deg * 1));
+}
+
+
+.text span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(231, 125, 125);
+    font-size: 4em;
+    cursor: default;
+    background: linear-gradient(rgb(0, 183, 0), rgb(8, 79, 0));
+    transform-style: preserve-3d;
+    transform: rotateY(calc(90deg * var(--i))) translateZ(50px);
+}
+
+.text2 span {
+    transform: rotateX(calc(90deg * var(--i))) translateZ(50px);
+}
+
+
+
+.text::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgb(8, 79, 0), rgb(8, 79, 0));
+    transform-origin: right;
+    transform: rotatex(90deg) translateZ(-50px);
+}
+
+.text:first-child span {
+
+    font-size: .7em;
+    width: 50%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: default;
+    transform-style: preserve-3d;
+    transform: rotateY(calc(90deg * var(--i))) translateZ(25px);
+    margin-left: 25px;
+    background: linear-gradient(rgb(124, 69, 43), rgb(124, 69, 43));;
+    color: rgb(197, 207, 1);
+}
+
+
+
+.text:first-child::before {
+    content: '';
+    position: absolute;
+    width: 50%;
+    height: 50%;
+    
+    background: linear-gradient(rgb(124, 69, 43), rgb(124, 69, 43));
+    transform-origin: right;
+    transform: rotatex(90deg) translateZ(-25px);
+    margin-left: 25px;
+}
+
+.text2::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(green, rgb(8, 79, 0));
+    transform-origin: right;
+    transform: rotatey(90deg) translateX(50px);
+}
+
+
+
+.text2 span {
+    background: linear-gradient(rgb(241, 249, 0), rgb(241, 249, 0));
+    color: rgb(148, 0, 0);
+    box-shadow: 0 0 20px rgb(241, 249, 0), 0 0 20px rgb(241, 249, 0), 0 0 20px rgb(236, 205, 0), 0 0 20px rgb(236, 205, 0);
+}
+
+.text2::before {
+    background: linear-gradient(rgb(241, 249, 0), rgb(241, 249, 0));
+}
+
+h2 {
+    position: absolute;
+    bottom: 50px;
+    color: rgb(52, 52, 52);
+    font-size: 2em;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+h2::after {
+    content: '¡¡FELIZ AÑO NUEVO!!';
+}
+
+h2.active {
+    color: rgb(255, 0, 0);
+    text-shadow: 0 0 10px rgb(232, 55, 55), 0 0 30px rgb(232, 55, 55), 0 0 70px rgb(232, 55, 55), 0 0 120px rgb(232, 55, 55);
+    transition: .5s;
+}
+
+h2.active::after {
+    content: 'HOLA PROFE';
+
+}
