@@ -1,0 +1,43 @@
+[   
+    {
+    "id": "0",
+    "email": "admin@gmail.com",
+    "nombre":"admin",
+    "contrasenna": "admin",
+    "foto":"",
+    "edad":"",
+    "direccion":"",
+    "enlace":""
+    },
+    {
+        "id": "1",
+        "email": "nacho@gmail.com",
+        "nombre":"nacho",
+        "contrasenna": "1234",
+        "foto":"",
+        "edad":"",
+        "direccion":"",
+        "enlace":""
+    },
+    {
+        "id": "2",
+        "email": "nouser@gmail.com",
+        "nombre":"nouser",
+        "contrasenna": "",
+        "foto":"",
+        "edad":"",
+        "direccion":"",
+        "enlace":""
+    },
+    {
+        "id": "4",
+        "email": "prueba@gmail.com",
+        "nombre":"prueba",
+        "contrasenna": "1234",
+        "foto":"",
+        "edad":"",
+        "direccion":"",
+        "enlace":""
+        }
+]
+    

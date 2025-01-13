@@ -26,14 +26,14 @@ body {
     color: white;
 }
 
-    .navContenedor {
+.navContenedor {
 
-        display: flex;
-        flex-flow: row;
-        justify-content: space-evenly;
-        align-items: center;
-        height: 60px;
-        font-size: 1vw;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 60px;
+    font-size: 1vw;
 
     }
 
@@ -42,57 +42,23 @@ body {
             flex-flow: row;
             align-items: center;
             justify-content: center;
-        } 
-        .cajaAdmin p{
-           text-align: center;
         }       
 
-            .titulo .principal{
-                    
+            .titulo h2{
+                
                 color: white;
                 font-family: 'OneDirection';
                 font-size: 3vw;
             }
-            .titulo .secundario{
-                
-                color: white;
-                font-family: 'OneDirection';
-                font-size: 1.5vw;
-            }
-            .menuBienvenida{
-                display: flex;
-            flex-flow: row;
-            align-items: center;
-            justify-content: center;
-            }
 
-
-        .menuBusqueda{
+        .menuRegistro{
             display: flex;
             flex-flow: row;
             align-items: center;
-            justify-content: center;
+            justify-content: space-evenly;
         }
-            .menuBusqueda .busqueda{
-                font-size: x-large;
-                outline: none;
-                transition: all 0.5s ease;
-                visibility: hidden;
-                border-radius: 20px;
-                border: solid 2px;
-                height: 1.5vw;
-                width: 0%;
-            }
-
-            .menuBusqueda:hover .busqueda{
-                visibility: visible;
-                transition: all 0.5s ease;
-                width: 60%;
             
-            }
-
-            /* .menuBusqueda:hover img{
-            } */
+        
 
         .menuDesplegable{
             display: flex;
@@ -100,7 +66,12 @@ body {
             align-items: center;
             justify-content: center;
         }
-
+        .perfil{
+            display: flex;
+            flex-flow: row;
+            align-items: center;
+            justify-content: center;
+        }
 
 
 
@@ -115,7 +86,6 @@ body {
 .imagenMenuDespleglable {
     height: 2.5vw;
 }
-
 
 
 .oculto {
@@ -134,9 +104,6 @@ body {
 
     display: inline;
 }
-
-
-
 
 
 #menuDesplegable {
@@ -181,7 +148,7 @@ body {
 .cajaGrande {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    
+    width: 100%;
     
     background-color: rgb(170, 170, 170);
 }
@@ -233,6 +200,7 @@ body {
 }
 
 .cajaBotonVerMas {
+    
     justify-content: center;
     align-items: center;
     display: flex;

@@ -32,8 +32,8 @@ body {
         flex-flow: row;
         justify-content: space-evenly;
         align-items: center;
-        height: 60px;
-        font-size: 1vw;
+    height: 60px;
+    font-size: 1vw;
 
     }
 
@@ -42,9 +42,6 @@ body {
             flex-flow: row;
             align-items: center;
             justify-content: center;
-        } 
-        .cajaAdmin p{
-           text-align: center;
         }       
 
             .titulo .principal{
@@ -59,13 +56,6 @@ body {
                 font-family: 'OneDirection';
                 font-size: 1.5vw;
             }
-            .menuBienvenida{
-                display: flex;
-            flex-flow: row;
-            align-items: center;
-            justify-content: center;
-            }
-
 
         .menuBusqueda{
             display: flex;
@@ -115,6 +105,11 @@ body {
 .imagenMenuDespleglable {
     height: 2.5vw;
 }
+
+
+
+
+
 
 
 
@@ -180,7 +175,7 @@ body {
 
 .cajaGrande {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(5, 1fr);
     
     
     background-color: rgb(170, 170, 170);
@@ -200,8 +195,8 @@ body {
 
 .caja img {
     border-radius: 10px;
-    width: 30vw;
-    height: 37vh;
+    width: 15vw;
+    height: 20vh;
 }
 
 .interior {
@@ -233,10 +228,8 @@ body {
 }
 
 .cajaBotonVerMas {
-    justify-content: center;
-    align-items: center;
     display: flex;
-    flex-flow: column;
+    justify-content: space-around;
 }
 
 #verMas {
@@ -248,4 +241,12 @@ body {
 .caja1 img:hover {
 
     src: url("../imagenes/macmiller.jpg");
+}
+
+.boton{
+    font-weight: bold;
+    border-radius: 20px;
+    background-color: cornflowerblue;
+    color: black;
+    padding: 5px 5px;
 }

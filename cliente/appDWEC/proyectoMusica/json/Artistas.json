@@ -1,0 +1,57 @@
+[
+    {
+        "foto": "../imagenes/onedirection.jpg",
+        "nombre": "OneDirection",
+        "descripcion": "One Direction fue una banda de música británico-irlandesa formada en 2010 en el programa de televisión The X Factor. El grupo, integrado por Harry Styles, Liam Payne, Louis Tomlinson, Niall Horan y Zayn Malik (quien dejó la banda en 2015), alcanzó un éxito mundial gracias a su carisma y canciones pegadizas como 'What Makes You Beautiful', 'Story of My Life' y 'Drag Me Down'. Con varios álbumes multiplatino, se convirtieron en un fenómeno global antes de tomar una pausa indefinida en 2016.",
+        "enlace": ""
+    },
+    {
+        "foto": "../imagenes/saramalacara.png",
+        "nombre": "Saramalacara",
+        "descripcion": "Saramalacara es una cantante y rapera argentina que ganó notoriedad como integrante del colectivo RipGang. Con un estilo único que combina trap, emo y sonidos experimentales, se ha convertido en una figura influyente dentro de la escena musical underground. Sus letras introspectivas y su voz emocional conectan con una audiencia joven que busca autenticidad en su música. Tras separarse de RipGang, ha desarrollado una carrera en solitario destacándose como una de las artistas más prometedoras de la región.",
+        "enlace": ""
+    },
+    {
+        "foto": "../imagenes/lanadelrey.png",
+        "nombre": "LanaDelRey",
+        "descripcion": "Lana Del Rey, nacida Elizabeth Woolridge Grant, es una cantante, compositora y productora estadounidense conocida por su estilo melancólico y cinematográfico que fusiona elementos del pop, rock alternativo y dream pop. Desde su álbum debut 'Born to Die' (2012), que incluyó éxitos como 'Summertime Sadness' y 'Video Games', Lana se ha establecido como una de las artistas más originales y aclamadas de la música contemporánea. Sus letras evocan nostalgia, romance y decadencia, y ha seguido innovando con álbumes como 'Norman F***ing Rockwell!' y 'Chemtrails Over the Country Club'.",
+        "enlace": ""
+    },
+    {
+        "foto": "../imagenes/macmiller.jpg",
+        "nombre": "MacMiller",
+        "descripcion": "Mac Miller, cuyo nombre real era Malcolm James McCormick, fue un rapero, cantante y productor musical estadounidense conocido por su habilidad para fusionar el hip hop con el jazz y la música introspectiva. Debutó con el álbum 'Blue Slide Park' en 2011, alcanzando rápidamente el éxito comercial. A medida que su carrera progresó, su música tomó un enfoque más personal y experimental, destacando trabajos como 'Swimming' y 'Circles', lanzado póstumamente en 2020. Miller dejó un legado duradero como un artista innovador y honesto que abordaba temas de amor, adicción y salud mental.",
+        "enlace": ""
+    },
+    {
+        "foto": "../imagenes/twentyonepilots.jpg",
+        "nombre": "TwentyOnePilots",
+        "descripcion": "Twenty One Pilots es un dúo musical estadounidense formado en 2009 por Tyler Joseph y Josh Dun. Su música es conocida por mezclar géneros como el pop alternativo, rock, hip hop y electrónica, lo que les ha permitido construir un sonido único e inconfundible. Canciones como 'Stressed Out', 'Ride' y 'Heathens' han sido éxitos globales, consolidándolos como una de las bandas más originales de su generación. Sus letras a menudo abordan temas de lucha personal, salud mental y esperanza, conectando profundamente con su base de fans, los 'Skeleton Clique'.",
+        "enlace": ""
+    },
+    {
+        "foto": "../imagenes/Estopa.jpg",
+        "nombre": "Estopa",
+        "descripcion": "Estopa es un dúo español de rumba catalana formado por los hermanos David y José Manuel Muñoz en 1999. Originarios de Cornellà de Llobregat, combinan ritmos de rumba, flamenco y rock con letras que cuentan historias cotidianas llenas de humor y emoción. Desde su debut con el álbum homónimo, que incluye éxitos como 'La raja de tu falda', han vendido millones de discos y se han convertido en un referente de la música española. Su autenticidad y cercanía los han mantenido vigentes durante más de dos décadas.",
+        "enlace": ""
+    },
+    {
+        "foto": "../imagenes/tylerthecreator.png",
+        "nombre": "TylerTheCreator",
+        "descripcion": "Tyler, The Creator, nacido Tyler Gregory Okonma, es un rapero, productor, diseñador de moda y visionario artístico estadounidense. Cofundador del influyente colectivo Odd Future, Tyler ha redefinido los límites del hip hop con álbumes conceptuales aclamados como 'Flower Boy', 'IGOR' (ganador del Grammy al Mejor Álbum de Rap) y 'Call Me If You Get Lost'. Su estilo musical abarca desde el rap experimental hasta el jazz y el soul, acompañado de letras introspectivas y provocadoras. Tyler también es conocido por su marca de moda Golf Wang y su festival anual Camp Flog Gnaw.",
+        "enlace": ""
+    },
+    {
+        "foto": "../imagenes/bigbang.jpg",
+        "nombre": "BigBang",
+        "descripcion": "BIGBANG es un grupo de K-pop surcoreano considerado uno de los pioneros y más influyentes de su género. Formado por G-Dragon, Taeyang, T.O.P, Daesung y Seungri, debutaron en 2006 bajo la agencia YG Entertainment. Con éxitos como 'Fantastic Baby', 'Bang Bang Bang' y 'Loser', BIGBANG marcó una nueva era en la música surcoreana, combinando géneros como el hip hop, pop y electrónica. Su impacto cultural y estilo único los ha llevado a ser conocidos como los 'Reyes del K-pop'.",
+        "enlace": ""
+    },
+    {
+        "foto": "../imagenes/arianagrande.jpg",
+        "nombre": "ArianaGrande",
+        "descripcion": "Ariana Grande es una cantante, compositora y actriz estadounidense conocida por su voz poderosa y su rango vocal de cuatro octavas. Comenzó su carrera en el teatro y la televisión, pero su salto a la música la convirtió en una de las artistas pop más importantes de su generación. Con álbumes como 'Sweetener', 'Thank U, Next' y 'Positions', Ariana ha logrado múltiples premios Grammy y una gran base de fans. Sus letras reflejan temas de amor, empoderamiento y vulnerabilidad, mientras que su estilo musical abarca desde el pop hasta el R&B.",
+        "enlace": ""
+    }
+]
+

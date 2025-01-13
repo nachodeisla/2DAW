@@ -1,0 +1,632 @@
+[
+    {
+        "id": "1-1",
+        "artista": "OneDirection",
+        "producto": "disco",
+        "nombre": "discoOneDirection1",
+        "descripcion": "el primer disco de OneDirection",
+        "foto": "",
+        "precio": 10,
+        "stock": 100
+    },
+    {
+        "id": "1-2",
+        "artista": "OneDirection",
+        "producto": "disco",
+        "nombre": "discoOneDirection2",
+        "descripcion": "el segundo disco de OneDirection",
+        "foto": "",
+        "precio": 10,
+        "stock": 100
+    },
+    {
+        "id": "1-3",
+        "artista": "OneDirection",
+        "producto": "disco",
+        "nombre": "discoOneDirection3",
+        "descripcion": "el tercer disco de OneDirection",
+        "foto": "",
+        "precio": 10,
+        "stock": 100
+    },
+    {
+        "id": "1-4",
+        "artista": "OneDirection",
+        "producto": "camiseta",
+        "nombre": "camisetaOneDirection1",
+        "descripcion": "camiseta con el logo de OneDirection",
+        "foto": "",
+        "precio": 8,
+        "stock": 50
+    },
+    {
+        "id": "1-5",
+        "artista": "OneDirection",
+        "producto": "camiseta",
+        "nombre": "camisetaOneDirection2",
+        "descripcion": "camiseta con fotografia de OneDirection",
+        "foto": "",
+        "precio": 8,
+        "stock": 50
+    },
+    {
+        "id": "1-6",
+        "artista": "OneDirection",
+        "producto": "poster",
+        "nombre": "posterOneDirection1",
+        "descripcion": "poster numero 1 de OneDirection",
+        "foto": "",
+        "precio": 5,
+        "stock": 25
+    },
+    {
+        "id": "1-7",
+        "artista": "OneDirection",
+        "producto": "poster",
+        "nombre": "posterOneDirection2",
+        "descripcion": "poster numero 1 de OneDirection",
+        "foto": "",
+        "precio": 5,
+        "stock": 25
+    },
+    {
+        "id": "2-1",
+        "artista": "Saramalacara",
+        "producto": "disco",
+        "nombre": "discoSaramalacara1",
+        "descripcion": "el primer disco de Saramalacara",
+        "foto": "",
+        "precio": 10,
+        "stock": 100
+    },
+    {
+        "id": "2-2",
+        "artista": "Saramalacara",
+        "producto": "disco",
+        "nombre": "discoSaramalacara2",
+        "descripcion": "el segundo disco de Saramalacara",
+        "foto": "",
+        "precio": 10,
+        "stock": 100
+    },
+    {
+        "id": "2-3",
+        "artista": "Saramalacara",
+        "producto": "disco",
+        "nombre": "discoSaramalacara3",
+        "descripcion": "el tercer disco de Saramalacara",
+        "foto": "",
+        "precio": 10,
+        "stock": 100
+    },
+    {
+        "id": "2-4",
+        "artista": "Saramalacara",
+        "producto": "camiseta",
+        "nombre": "camisetaSaramalacara1",
+        "descripcion": "camiseta con el logo de Saramalacara",
+        "foto": "",
+        "precio": 8,
+        "stock": 50
+    },
+    {
+        "id": "2-5",
+        "artista": "Saramalacara",
+        "producto": "camiseta",
+        "nombre": "camisetaSaramalacara2",
+        "descripcion": "camiseta con fotografia de Saramalacara",
+        "foto": "",
+        "precio": 8,
+        "stock": 50
+    },
+    {
+        "id": "2-6",
+        "artista": "Saramalacara",
+        "producto": "poster",
+        "nombre": "posterSaramalacara1",
+        "descripcion": "poster numero 1 de Saramalacara",
+        "foto": "",
+        "precio": 5,
+        "stock": 25
+    },
+    {
+        "id": "2-7",
+        "artista": "Saramalacara",
+        "producto": "poster",
+        "nombre": "posterSaramalacara2",
+        "descripcion": "poster numero 1 de Saramalacara",
+        "foto": "",
+        "precio": 5,
+        "stock": 25
+    },
+    {
+        "id": "3-1",
+        "artista": "LanaDelRey",
+        "producto": "disco",
+        "nombre": "disco",
+        "descripcion": "el primer disco de LanaDelRey",
+        "foto": "",
+        "precio": 10,
+        "stock": 100
+    },
+    {
+        "id": "3-2",
+        "artista": "LanaDelRey",
+        "producto": "disco",
+        "nombre": "disco",
+        "descripcion": "el segundo disco de LanaDelRey",
+        "foto": "",
+        "precio": 10,
+        "stock": 100
+    },
+    {
+        "id": "3-3",
+        "artista": "LanaDelRey",
+        "producto": "disco",
+        "nombre": "disco",
+        "descripcion": "el tercer disco de LanaDelRey",
+        "foto": "",
+        "precio": 10,
+        "stock": 100
+    },
+    {
+        "id": "3-4",
+        "artista": "LanaDelRey",
+        "producto": "camiseta",
+        "nombre": "camiseta",
+        "descripcion": "camiseta con el logo de LanaDelRey",
+        "foto": "",
+        "precio": 8,
+        "stock": 50
+    },
+    {
+        "id": "3-5",
+        "artista": "LanaDelRey",
+        "producto": "camiseta",
+        "nombre": "camiseta",
+        "descripcion": "camiseta con fotografia de LanaDelRey",
+        "foto": "",
+        "precio": 8,
+        "stock": 50
+    },
+    {
+        "id": "3-6",
+        "artista": "LanaDelRey",
+        "producto": "poster",
+        "nombre": "poster",
+        "descripcion": "poster numero 1 de LanaDelRey",
+        "foto": "",
+        "precio": 5,
+        "stock": 25
+    },
+    {
+        "id": "3-7",
+        "artista": "LanaDelRey",
+        "producto": "poster",
+        "nombre": "poster",
+        "descripcion": "poster numero 1 de LanaDelRey",
+        "foto": "",
+        "precio": 5,
+        "stock": 25
+    },
+    {
+        "id": "4-1",
+        "artista": "MacMiller",
+        "producto": "disco",
+        "nombre": "disco",
+        "descripcion": "el primer disco de MacMiller",
+        "foto": "",
+        "precio": 10,
+        "stock": 100
+    },
+    {
+        "id": "4-2",
+        "artista": "MacMiller",
+        "producto": "disco",
+        "nombre": "disco",
+        "descripcion": "el segundo disco de MacMiller",
+        "foto": "",
+        "precio": 10,
+        "stock": 100
+    },
+    {
+        "id": "4-3",
+        "artista": "MacMiller",
+        "producto": "disco",
+        "nombre": "disco",
+        "descripcion": "el tercer disco de MacMiller",
+        "foto": "",
+        "precio": 10,
+        "stock": 100
+    },
+    {
+        "id": "4-4",
+        "artista": "MacMiller",
+        "producto": "camiseta",
+        "nombre": "camiseta",
+        "descripcion": "camiseta con el logo de MacMiller",
+        "foto": "",
+        "precio": 8,
+        "stock": 50
+    },
+    {
+        "id": "4-5",
+        "artista": "MacMiller",
+        "producto": "camiseta",
+        "nombre": "camiseta",
+        "descripcion": "camiseta con fotografia de MacMiller",
+        "foto": "",
+        "precio": 8,
+        "stock": 50
+    },
+    {
+        "id": "4-6",
+        "artista": "MacMiller",
+        "producto": "poster",
+        "nombre": "poster",
+        "descripcion": "poster numero 1 de MacMiller",
+        "foto": "",
+        "precio": 5,
+        "stock": 25
+    },
+    {
+        "id": "4-7",
+        "artista": "MacMiller",
+        "producto": "poster",
+        "nombre": "poster",
+        "descripcion": "poster numero 1 de MacMiller",
+        "foto": "",
+        "precio": 5,
+        "stock": 25
+    },
+    {
+        "id": "5-1",
+        "artista": "TwentyOnePilots",
+        "producto": "disco",
+        "nombre": "disco",
+        "descripcion": "el primer disco de TwentyOnePilots",
+        "foto": "",
+        "precio": 10,
+        "stock": 100
+    },
+    {
+        "id": "5-2",
+        "artista": "TwentyOnePilots",
+        "producto": "disco",
+        "nombre": "disco",
+        "descripcion": "el segundo disco de TwentyOnePilots",
+        "foto": "",
+        "precio": 10,
+        "stock": 100
+    },
+    {
+        "id": "5-3",
+        "artista": "TwentyOnePilots",
+        "producto": "disco",
+        "nombre": "disco",
+        "descripcion": "el tercer disco de TwentyOnePilots",
+        "foto": "",
+        "precio": 10,
+        "stock": 100
+    },
+    {
+        "id": "5-4",
+        "artista": "TwentyOnePilots",
+        "producto": "camiseta",
+        "nombre": "camiseta",
+        "descripcion": "camiseta con el logo de TwentyOnePilots",
+        "foto": "",
+        "precio": 8,
+        "stock": 50
+    },
+    {
+        "id": "5-5",
+        "artista": "TwentyOnePilots",
+        "producto": "camiseta",
+        "nombre": "camiseta",
+        "descripcion": "camiseta con fotografia de TwentyOnePilots",
+        "foto": "",
+        "precio": 8,
+        "stock": 50
+    },
+    {
+        "id": "5-6",
+        "artista": "TwentyOnePilots",
+        "producto": "poster",
+        "nombre": "poster",
+        "descripcion": "poster numero 1 de TwentyOnePilots",
+        "foto": "",
+        "precio": 5,
+        "stock": 25
+    },
+    {
+        "id": "5-7",
+        "artista": "TwentyOnePilots",
+        "producto": "poster",
+        "nombre": "poster",
+        "descripcion": "poster numero 1 de TwentyOnePilots",
+        "foto": "",
+        "precio": 5,
+        "stock": 25
+    },
+    {
+        "id": "6-1",
+        "artista": "Estopa",
+        "producto": "disco",
+        "nombre": "disco",
+        "descripcion": "el primer disco de Estopa",
+        "foto": "",
+        "precio": 10,
+        "stock": 100
+    },
+    {
+        "id": "6-2",
+        "artista": "Estopa",
+        "producto": "disco",
+        "nombre": "disco",
+        "descripcion": "el segundo disco de Estopa",
+        "foto": "",
+        "precio": 10,
+        "stock": 100
+    },
+    {
+        "id": "6-3",
+        "artista": "Estopa",
+        "producto": "disco",
+        "nombre": "disco",
+        "descripcion": "el tercer disco de Estopa",
+        "foto": "",
+        "precio": 10,
+        "stock": 100
+    },
+    {
+        "id": "6-4",
+        "artista": "Estopa",
+        "producto": "camiseta",
+        "nombre": "camiseta",
+        "descripcion": "camiseta con el logo de Estopa",
+        "foto": "",
+        "precio": 8,
+        "stock": 50
+    },
+    {
+        "id": "6-5",
+        "artista": "Estopa",
+        "producto": "camiseta",
+        "nombre": "camiseta",
+        "descripcion": "camiseta con fotografia de Estopa",
+        "foto": "",
+        "precio": 8,
+        "stock": 50
+    },
+    {
+        "id": "6-6",
+        "artista": "Estopa",
+        "producto": "poster",
+        "nombre": "poster",
+        "descripcion": "poster numero 1 de Estopa",
+        "foto": "",
+        "precio": 5,
+        "stock": 25
+    },
+    {
+        "id": "6-7",
+        "artista": "Estopa",
+        "producto": "poster",
+        "nombre": "poster",
+        "descripcion": "poster numero 1 de Estopa",
+        "foto": "",
+        "precio": 5,
+        "stock": 25
+    },
+    {
+        "id": "7-1",
+        "artista": "TylerTheCreator",
+        "producto": "disco",
+        "nombre": "disco",
+        "descripcion": "el primer disco de TylerTheCreator",
+        "foto": "",
+        "precio": 10,
+        "stock": 100
+    },
+    {
+        "id": "7-2",
+        "artista": "TylerTheCreator",
+        "producto": "disco",
+        "nombre": "disco",
+        "descripcion": "el segundo disco de TylerTheCreator",
+        "foto": "",
+        "precio": 10,
+        "stock": 100
+    },
+    {
+        "id": "7-3",
+        "artista": "TylerTheCreator",
+        "producto": "disco",
+        "nombre": "disco",
+        "descripcion": "el tercer disco de TylerTheCreator",
+        "foto": "",
+        "precio": 10,
+        "stock": 100
+    },
+    {
+        "id": "7-4",
+        "artista": "TylerTheCreator",
+        "producto": "camiseta",
+        "nombre": "camiseta",
+        "descripcion": "camiseta con el logo de TylerTheCreator",
+        "foto": "",
+        "precio": 8,
+        "stock": 50
+    },
+    {
+        "id": "7-5",
+        "artista": "TylerTheCreator",
+        "producto": "camiseta",
+        "nombre": "camiseta",
+        "descripcion": "camiseta con fotografia de TylerTheCreator",
+        "foto": "",
+        "precio": 8,
+        "stock": 50
+    },
+    {
+        "id": "7-6",
+        "artista": "TylerTheCreator",
+        "producto": "poster",
+        "nombre": "poster",
+        "descripcion": "poster numero 1 de TylerTheCreator",
+        "foto": "",
+        "precio": 5,
+        "stock": 25
+    },
+    {
+        "id": "7-7",
+        "artista": "TylerTheCreator",
+        "producto": "poster",
+        "nombre": "poster",
+        "descripcion": "poster numero 1 de TylerTheCreator",
+        "foto": "",
+        "precio": 5,
+        "stock": 25
+    },
+    {
+        "id": "8-1",
+        "artista": "BigBang",
+        "producto": "disco",
+        "nombre": "disco",
+        "descripcion": "el primer disco de BigBang",
+        "foto": "",
+        "precio": 10,
+        "stock": 100
+    },
+    {
+        "id": "8-2",
+        "artista": "BigBang",
+        "producto": "disco",
+        "nombre": "disco",
+        "descripcion": "el segundo disco de BigBang",
+        "foto": "",
+        "precio": 10,
+        "stock": 100
+    },
+    {
+        "id": "8-3",
+        "artista": "BigBang",
+        "producto": "disco",
+        "nombre": "disco",
+        "descripcion": "el tercer disco de BigBang",
+        "foto": "",
+        "precio": 10,
+        "stock": 100
+    },
+    {
+        "id": "8-4",
+        "artista": "BigBang",
+        "producto": "camiseta",
+        "nombre": "camiseta",
+        "descripcion": "camiseta con el logo de BigBang",
+        "foto": "",
+        "precio": 8,
+        "stock": 50
+    },
+    {
+        "id": "8-5",
+        "artista": "BigBang",
+        "producto": "camiseta",
+        "nombre": "camiseta",
+        "descripcion": "camiseta con fotografia de BigBang",
+        "foto": "",
+        "precio": 8,
+        "stock": 50
+    },
+    {
+        "id": "8-6",
+        "artista": "BigBang",
+        "producto": "poster",
+        "nombre": "poster",
+        "descripcion": "poster numero 1 de BigBang",
+        "foto": "",
+        "precio": 5,
+        "stock": 25
+    },
+    {
+        "id": "8-7",
+        "artista": "BigBang",
+        "producto": "poster",
+        "nombre": "poster",
+        "descripcion": "poster numero 1 de BigBang",
+        "foto": "",
+        "precio": 5,
+        "stock": 25
+    },
+    {
+        "id": "9-1",
+        "artista": "ArianaGrande",
+        "producto": "disco",
+        "nombre": "disco",
+        "descripcion": "el primer disco de ArianaGrande",
+        "foto": "",
+        "precio": 10,
+        "stock": 100
+    },
+    {
+        "id": "9-2",
+        "artista": "ArianaGrande",
+        "producto": "disco",
+        "nombre": "disco",
+        "descripcion": "el segundo disco de ArianaGrande",
+        "foto": "",
+        "precio": 10,
+        "stock": 100
+    },
+    {
+        "id": "9-3",
+        "artista": "ArianaGrande",
+        "producto": "disco",
+        "nombre": "disco",
+        "descripcion": "el tercer disco de ArianaGrande",
+        "foto": "",
+        "precio": 10,
+        "stock": 100
+    },
+    {
+        "id": "9-4",
+        "artista": "ArianaGrande",
+        "producto": "camiseta",
+        "nombre": "camiseta",
+        "descripcion": "camiseta con el logo de ArianaGrande",
+        "foto": "",
+        "precio": 8,
+        "stock": 50
+    },
+    {
+        "id": "9-5",
+        "artista": "ArianaGrande",
+        "producto": "camiseta",
+        "nombre": "camiseta",
+        "descripcion": "camiseta con fotografia de ArianaGrande",
+        "foto": "",
+        "precio": 8,
+        "stock": 50
+    },
+    {
+        "id": "9-6",
+        "artista": "ArianaGrande",
+        "producto": "poster",
+        "nombre": "poster",
+        "descripcion": "poster numero 1 de ArianaGrande",
+        "foto": "",
+        "precio": 5,
+        "stock": 25
+    },
+    {
+        "id": "9-7",
+        "artista": "ArianaGrande",
+        "producto": "poster",
+        "nombre": "poster",
+        "descripcion": "poster numero 1 de ArianaGrande",
+        "foto": "",
+        "precio": 5,
+        "stock": 25
+    }
+]

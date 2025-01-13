@@ -4,59 +4,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/principal.css">
-    <script src="../js/Usuario.js"></script>
-    <script src="../js/Artista.js"></script>
-    <script src="../js/principal.js"></script>
+    <link rel="stylesheet" href="../css/principalNoUsuario.css">
+    <script src="../clases/Usuario.js"></script>
+    <script src="../clases/Artista.js"></script>
+    <script src="../clases/Producto.js"></script>
+    <script src="../js/general.js"></script>
+    <script src="../js/principalNoUsuario.js"></script>
+    
     <title>Document</title>
 </head>
-
 <body>
-    <nav class="cabeceraInicio" id="cabeceraInicio">
-        <section class="navContenedor">
-            <figure class="">
-                <h2 class="">TICKET-ON</h2>
-            </figure>
-            <div class="menuRegistro">
-                <form action="">
-                    <p>
-                        <img src="../imagenes/user.png" alt="" width="20vw"> <input type="text" id="cajaUsuario"
-                            class="">
-                        <img src="../imagenes/key.png" alt="" width="20vw"> <input type="password" id="cajaContrasenna"
-                            clas="">
-                        <button type="button" value="Entrar" onclick="comprobarUsuario()">Entrar</button>
-                        <a href="./registro.html"><button type="button" value="Registrarse">Registrarse</button></a>
-                        <span id="errorCodigoClave" class="oculto" style="color: rgb(162, 0, 0);font-size: 125%;">Usuario y/o clave incorrecto/s</span>
-                        <span id="errorNoRegistro" class="oculto" style="color: rgb(162, 0, 0);font-size: 125%;" >Accedea tu cuenta para ver el contenido</span>
-                    </p>
-                </form>
-            </div>
-            <div class="menuDesplegable">
-                <a><img class="imagenMenuDespleglable" src="../imagenes/menu.png" alt=""  id="botonMenu"></a>
-            </div>
-        </section>
-</nav>
+     <nav>
+    </nav> 
         <div class="carrusel">
         </div>
         <div class="cajaBotonVerMas">
-            <button type="button" id="verMas" onclick="crearDivAleatorios()">mostrar 3 conciertos aleatorios. </button>
-            <button type="button" id="verMas" onclick="crearDivTotales()">mostrar todos los conciertos. </button>
+            
+            <div>pulsa en el artista para ver su contenido</div>
+            <button type="button" id="verMas" onclick="crearDivTotales(listaArtistas)">mostrar todos los artistas. </button>
         </div>
-    <div class="cajaGrande">
-        <div class="caja1">
+        <div class="cajaGrande">
         </div>
-        <div class="caja2">
-        </div>
-        <div class="caja3">
-        </div>
-    </div>
-    <div id="menuDesplegable" class="menuOculto">
-        <p class="linea"><a href="">DISCOS</a></p>
-        <p class="linea"><a href="">TOUR</a></p>
-        <p class="linea"><a href="">BANDA</a></p>
-        <p class="linea"><a href="">PRODCUTOS</a></p>
-        <p><a href="">CONTACTO</a></p>
-    </div>
 </body>
 
 </html>

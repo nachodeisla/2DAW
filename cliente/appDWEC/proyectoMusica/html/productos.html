@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/productos.css">
+    <script src="../clases/Usuario.js"></script>
+    <script src="../clases/Artista.js"></script>
+    <script src="../clases/Producto.js"></script>
+    <script src="../js/productos.js"></script>
+    <script src="../js/general.js"></script>
+
+    <title>Document</title>
+</head>
+
+<body>
+     <nav>
+          
+    </nav> 
+    <div class="carrusel">
+    </div>
+<div class="cajaBotonVerMas">
+    
+    <div>
+        <p>Selecciona un producto a buscar: <select name="" id="productoBusqueda">
+            <option value="todos">Todos</option>
+            <option value="disco">Discos</option>
+            <option value="camiseta">Camisetas</option>
+            <option value="poster">Posters</option>
+            <option value="especial">AlbumEdicionEspecial</option>
+
+        </select></p>
+        Selecciona un artista: <select name="selectArtistas" id="selectArtistas">
+            <option value="todos">Todos</option>
+        </select>    
+        <button type="button" id="verMas" onclick="filtrarListaProductos()">Filtrar</button>
+
+    </div>
+    
+</div>
+<div class="cajaGrande">
+
+</div>
+        
+    </div>
+    <div id="menuDesplegable" class="menuOculto">
+        <p class="linea"><a href="../html/principal.html">PRINCIPAL</a></p>
+        <p class="linea"><a href="../html/productos.html">PRODCUTOS</a></p>
+        <p class="linea"><a href="../html/perfil.html">PERFIL</a></p>
+        <p><a href="../html/principalNoUsuario.html">CERRAR SESION</a></p>
+    </div>
+</body>
+
+</html>

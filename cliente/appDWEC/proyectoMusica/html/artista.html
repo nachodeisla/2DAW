@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/artista.css">
+    <script src="../clases/Artista.js"></script>
+    <script src="../js/general.js"></script>
+</head>
+<body>
+    <div id="artista"></div>
+    <script>
+        
+        function cogerNombre() {
+            const params = new URLSearchParams(window.location.search);
+            return params.get('name');
+        }
+        
+        listaArtistas = JSON.parse(localStorage.getItem("listaArtistas"));
+
+        const nombre = cogerNombre();
+        datosArtista = listaArtistas.find((artista) => artista.nombre == nombre);
+        artista = new Artista(
+            datosArtista.foto,
+            datosArtista.nombre,
+            datosArtista.descripcion,
+            datosArtista.enlace,
+            datosArtista.edad
+        );
+        const detalleDiv = document.getElementById('artista');
+        detalleDiv.innerHTML = artista.mostrarDatosArtista();
+        ;
+
+    </script>
+</body>
+</html>

@@ -1,15 +1,8 @@
 
-var listaUsuarios = [];
-cargarUsuarios();
-function cargarUsuarios() {
-    listaUsuarios.push(new Usuario("nacho@gmail.com", "nacho", "1234"));
-    listaUsuarios.push(new Usuario("pablo@gmail.com", "pablo", "2345"));
-    listaUsuarios.push(new Usuario("luismi@gmail.com", "luismi", "3456"));
-    listaUsuarios.push(new Usuario("wiwi@gmail.com", "wiwi", "4567"));
-    listaUsuarios.push(new Usuario("niñero@gmail.com", "niñero", "5678"));
-
+onload = () => {
+    listaUsuarios = JSON.parse(localStorage.getItem("listaUsuarios"));
+    
 }
-
 
 function registrarUsuario() {
     emailRegistro = document.getElementById("emailRegistro").value;
@@ -17,33 +10,69 @@ function registrarUsuario() {
     contrasennaRegistro = document.getElementById("contrasennaRegistro").value;
     confirmacionContrasennaRegistro = document.getElementById("confirmacionContrasennaRegistro").value;
 
-    if (listaUsuarios.findIndex((usuario) => usuario.email == emailRegistro ||
-        usuario.nombre == usuarioRegistro) != -1) {
-        
-        document.getElementById("usuario-correoYaExistente").className = "visible1"
-        document.getElementById("errorContraseña").className = "oculto"
-        document.getElementById("registroExitoso").className = "oculto"
+    let emailValido=/^[a-zA-Z0-9._]+@(gmail\.com|hotmail\.com)$/;
+    let usuarioValido=/^[A-Za-z]+$/;
+    let contrasennaValido=/^(?=.*[A-Z])(?=.*[a-z])(?=.*\d)(?=.*[@$!?])[A-Za-z\d@$!?]{8,}$/;
 
-    } else {
-       if (contrasennaRegistro!= "" && confirmacionContrasennaRegistro!= "" && 
-            (contrasennaRegistro=confirmacionContrasennaRegistro) &&
-            contrasennaRegistro!= -1 && confirmacionContrasennaRegistro!= -1
-            ){
-        listaUsuarios.push(new Usuario(emailRegistro, usuarioRegistro, contrasennaRegistro));
-        document.getElementById("registroExitoso").className = "visible2"
-        document.getElementById("errorContraseña").className = "oculto"
-        document.getElementById("usuario-correoYaExistente").className = "oculto"
-    }else{
-        document.getElementById("errorContraseña").className = "visible1"
-        document.getElementById("registroExitoso").className = "oculto"
-        document.getElementById("usuario-correoYaExistente").className = "oculto"
-    }
+    if ((usuarioValido.test(usuarioRegistro))&&(emailValido.test(emailRegistro))&&(contrasennaValido.test(contrasennaRegistro))
+        &&(confirmacionContrasennaRegistro==contrasennaRegistro)) {
+            if (listaUsuarios.findIndex((usuario) => usuario.email == emailRegistro) != -1) {
+                let mensajeError= "el email ya existe";
+                registroErroneo(mensajeError);
+            }else if (listaUsuarios.findIndex((usuario) => usuario.nombre == usuarioRegistro) != -1) {
+                let mensajeError= "el usuario ya esta en uso";
+                registroErroneo(mensajeError);
+            }else{
+                console.log("hola");
+                let mensajeError= "dado de alta";
+                registroCorrecto(mensajeError);
+                usuario = new Usuario(0,emailRegistro,usuarioRegistro,contrasennaRegistro,null,null,null,null);
+                listaUsuarios.push(usuario);
+                localStorage.setItem("listaUsuarios",JSON.stringify(listaUsuarios));
+                setTimeout(() => {
+                    window.location.href = "./principalNoUsuario.html";
+                }, 1000);
+                
+                
+
+            }
+    }else if(!(usuarioValido.test(usuarioRegistro))){
+        let mensajeError= "el valor de usuario no cumple los requisitos(recuerda que puede contener solo letras mayusculas o minisculas)";
+        registroErroneo(mensajeError);
+    }else if(!(contrasennaValido.test(contrasennaRegistro))){
+        let mensajeError= "el valor de contraseña no cumple los requisitos(recuerda que debe contener letras, numeros, un valor especial (@, $, !, ?) y un minimo de 8 caracteres)";
+        registroErroneo(mensajeError);
+    }else if(!confirmacionContrasennaRegistro==contrasennaRegistro){
+        let mensajeError= "Las contraseñas no coinciden";
+        registroErroneo(mensajeError);
     }
 }
 
+function registroErroneo(mensajeError){
+       
+    let nuevoP = document.createElement("p");
+    nuevoP.style.color="red";
+    nuevoP.innerHTML=mensajeError;
+    let div = document.getElementById("cajaMensajeError");
+    div.appendChild(nuevoP);
 
+    setTimeout(() => {
+        nuevoP.remove();
+    }, 3000);
 
-function menuAparece() {
+}
+function registroCorrecto(mensajeError){
+       
+    let nuevoP = document.createElement("p");
+    nuevoP.style.color="green";
+    nuevoP.innerHTML=mensajeError;
+    let div = document.getElementById("cajaMensajeError");
+    div.appendChild(nuevoP);
+
+    setTimeout(() => {
+        nuevoP.remove();
+    }, 3000);
 
 
 }
+

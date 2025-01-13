@@ -5,29 +5,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/registro.css">
-    <script src="../js/Usuario.js"></script>
-
-
+    <script src="../clases/Usuario.js"></script>
     <script src="../js/registro.js"></script>
+    <script src="../js/general.js"></script>
     <title>Document</title>
 
 
 </head>
 
 <body>
+    
     <nav class="cajaRegistro">
         <fieldset class="bordeRegistro">
             <div><h2>TICKET-ON</h2></div>
             <div>Registrate</div>
             <section class="elementosRegistro">
-                <div class="caja2">Email: <input type="email" id="emailRegistro"></div>
-                <div class="caja1">Nombre de usuario: <input type="text" id="usuarioRegistro"></div>
-                <div class="caja3">Contraseña: <input type="password" id="contrasennaRegistro"></div>
-                <div class="caja4">Repetir contraseña: <input type="password" id="confirmacionContrasennaRegistro"></div>
-                <span id="usuario-correoYaExistente" class="oculto">Ese usuario o email ya estan en uso</span>
-                <span id="registroExitoso" class="oculto">Alta exitosa</span>
-                <span id="errorContraseña" class="oculto">Contraseñas distintas (deben ser iguales)</span>
-                <div class="boton"><input type="submit" value="Registrarme" onclick="registrarUsuario()"></div>
+                <form action="" onsubmit="registrarUsuario()">
+                    <div class="caja2">Email: <input type="email" id="emailRegistro"></div>
+                    <div class="caja1">Nombre de usuario: <input type="text" id="usuarioRegistro"></div>
+                    <div class="caja3">Contraseña: <input type="password" id="contrasennaRegistro"></div>
+                    <div class="caja4">Repetir contraseña: <input type="password" id="confirmacionContrasennaRegistro"></div>
+                    <div id="cajaMensajeError"></div>
+                    <div class="boton"><button type="button" value="Registrarme" onclick="registrarUsuario()">registrarme</button></div>
+                </form>
             </section>
         </fieldset>
     </nav>
