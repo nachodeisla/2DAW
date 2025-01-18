@@ -1,0 +1,55 @@
+.caja{
+    width: 200px;
+    height: 200px;
+    background-color: pink;
+    color: rgb(74, 22, 123);
+}
+
+.boton1:hover+.caja1{
+    transform-origin: center center;
+    transform: translateX(400px) translateY(200px);
+    /* transition: property duration timing-function delay; */
+    transition: all 1s ease 0.5s;
+}
+
+.boton2:hover+.caja2{
+    transform-origin: center center;
+    transform: scaleX(3.5);
+    transition: all 2s ease-in 0.5s;
+}
+
+.boton3:hover+.caja3{
+    /* como sale en la imagen */
+    transform-origin: center center;
+    transform: rotateX(-45deg) rotateY(15deg);
+    /* como pides en el enunciado */
+    /*
+    transform-origin: center center;
+    transform: rotateX(45deg) rotateY(-20deg) rotateZ(40deg); 
+    */
+    transition: all 3s ease-out 0.5s;
+}
+
+
+.boton4:hover+.caja4{
+    transform-origin: center center;
+    transform: rotateZ(180deg);
+    transition: all 4s ease-in-out 0.5s;
+}
+
+
+.boton5:hover+.caja5{
+    transform-origin: center center;
+    transform: rotate(45deg) scale(1.2) translateX(400px) translateY(-600px);
+    content: "chao";
+    transition: all 5s linear;
+}
+
+/* funcion extra */
+.boton5:hover+.caja5::after{
+    content: "chao, me voy";
+    position: absolute;
+    top: 30%;
+    left: 25%;
+    font-size: 30px;
+}
