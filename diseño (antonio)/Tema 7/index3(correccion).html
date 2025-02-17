@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Usabilidad en las imágenes</title>
+    <style>
+        body {
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 16px;
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: #ffffff;
+            color: #000000;
+        }
+
+        .image-container {
+            margin: 20px 0;
+        }
+
+        .image-container img {
+            width: 300px;
+            height: auto;
+        }
+
+        .background-image {
+            background-image: url('https://www.eniun.com/wp-content/uploads/Tutorial-Usabilidad-1-900x450.png');
+            background-size: cover;
+            height: 300px;
+            padding: 20px;
+        }
+        #cambio{
+            color: aliceblue;
+        }
+
+    </style>
+</head>
+
+<body>
+    <h1>Usabilidad en las imágenes</h1>
+    <p>Imagen cambiada y etiqueta alt descriptiva añadida:</p>
+    <div class="image-container">
+        <img src="https://static.wikia.nocookie.net/memes-pedia/images/3/3a/Spoderman.jpg/revision/latest?cb=20220116190715&path-prefix=es" alt="imagen de spiderman">
+    </div>
+    <p>Texto y fondo con más contraste:</p>
+    <div class="background-image">
+        <p id="cambio">Texto sobre una imagen de fondo que es facil de leer.</p>
+    </div>
+</body>
+
+</html>
