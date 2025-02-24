@@ -1,0 +1,48 @@
+body{
+    
+    display: flex;
+    justify-content: center;
+}
+.navegador {
+    background-color: #000000;
+    color: #f74e4e;
+    width: 60%;
+    display: flex;
+    justify-content: center;
+}
+
+.menu a {
+    color: rgb(250, 190, 255);
+    text-decoration: none;
+    padding: 10px 40px;
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+
+
+
+
+
+@media (min-width: 768px) {
+    .menu {
+        flex-direction: row; 
+    }
+}
+
+
+@media (max-width: 767px) {
+    .navegador {
+        width: 100%;
+    }
+
+    .menu {
+        flex-direction: column;
+        text-align: center;
+    }
+
+}

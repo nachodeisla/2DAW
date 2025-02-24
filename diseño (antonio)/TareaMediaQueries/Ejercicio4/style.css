@@ -1,0 +1,36 @@
+.columna {
+
+    border: solid 2px rgb(235, 129, 203);
+    border-radius: 10px;
+    text-align: center;
+
+}
+
+@media screen and (min-width : 1024px) {
+     .container {
+        display: flex;
+        flex-flow: row;
+        gap: 25px;
+        justify-content: center;
+    }
+
+}
+
+@media screen and (min-width : 768px) and (max-width : 1024px) {
+    .container {
+        display: flex;
+        flex-flow: column;
+        gap: 100px;
+        justify-content: center;
+
+        /* simplemente añadí más espacio entre cada caja porque no sabia como hacer dos columnas  */
+    }
+}
+@media screen and (max-width : 768px) {
+    .container {
+        display: flex;
+        flex-flow: column;
+        gap: 25px;
+        justify-content: center;
+    }
+}
